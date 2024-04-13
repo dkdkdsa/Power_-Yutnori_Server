@@ -26,10 +26,12 @@ namespace Core
         {
             ushort count = 0;
 
-            ushort size = BitConverter.ToUInt16(buffer.Array, buffer.Offset);
-            count += 2;
-            ushort id = BitConverter.ToUInt16(buffer.Array, buffer.Offset + count);
-            count += 2;    // id값을 가지고 switch 대신 딕셔너리에서 값을 찾고 등록된 핸들러에서 해당 작업 Invoke
+            ushort size = 0;
+            Serializer.Deserialize(ref size, ref buffer, ref count);
+
+            ushort id = 0;
+            Serializer.Deserialize(ref id, ref buffer, ref count);
+            //count += 2;    // id값을 가지고 switch 대신 딕셔너리에서 값을 찾고 등록된 핸들러에서 해당 작업 Invoke
 
             Func<PacketSession, ArraySegment<byte>, IPacket> func = null;
             if (makeFunc.TryGetValue(id, out func))

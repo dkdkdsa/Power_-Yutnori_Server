@@ -82,7 +82,7 @@ namespace Core
         public void Read(ArraySegment<byte> segment)
         {
 
-            ushort count = 0;
+            ushort count = sizeof(ushort);
             count += sizeof(ushort);
 
             Serializer.Deserialize(ref position, ref segment, ref count);
@@ -95,14 +95,15 @@ namespace Core
         {
 
             ArraySegment<byte> segment = SendBufferHelper.Open(4096);
-            ushort count = 0;
+            ushort count = sizeof(ushort);
 
             Protocol.Serialize(ref segment, ref count);
             position.Serialize(ref segment, ref count);
             rotation.Serialize(ref segment, ref count);
             prefabName.Serialize(ref segment, ref count);
+            count.Serialize(ref segment);
 
-            return segment;
+            return SendBufferHelper.Close(count);
 
         }
 

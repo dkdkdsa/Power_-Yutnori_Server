@@ -12,7 +12,7 @@ namespace UnityNet
     public class NetworkManager : MonoBehaviour
     {
         [Header("Network")]
-        [SerializeField] private int port;
+        [SerializeField] private int port = 7777;
 
         [Header("Prefab")]
         [SerializeField] private NetworkPrefabs prefabs;
@@ -27,6 +27,7 @@ namespace UnityNet
         {
 
             Instance = this;
+            session = new UnitySession();
 
         }
 
@@ -48,10 +49,12 @@ namespace UnityNet
 
             IPHostEntry iphost = Dns.GetHostEntry(Dns.GetHostName());
             IPAddress ipAddr = iphost.AddressList[1];
-            IPEndPoint endPoint = new IPEndPoint(ipAddr, 7777); // IP주소, 포트번호 입력
+            IPEndPoint endPoint = new IPEndPoint(ipAddr, port); // IP주소, 포트번호 입력
 
             Connector connector = new Connector();
             connector.Connect(endPoint, () => { return session; });
+
+            IsConnected = true;
 
         }
 
@@ -77,6 +80,13 @@ namespace UnityNet
             }
 
             return Instantiate(prefab, pos, rot);
+
+        }
+
+        private void OnDestroy()
+        {
+
+            session.Disconnect();
 
         }
 

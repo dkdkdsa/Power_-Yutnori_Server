@@ -25,7 +25,7 @@ namespace Core
 
                 ushort dataSize = BitConverter.ToUInt16(buffer.Array, buffer.Offset);
                 if (buffer.Count < dataSize)
-                    break;
+                     break;
 
                 OnRecvPacket(new ArraySegment<byte>(buffer.Array, buffer.Offset, dataSize));  
 
@@ -82,7 +82,7 @@ namespace Core
         }
 
         private void OnRecvCompleted(object sender, SocketAsyncEventArgs args)
-        {   
+        {
 
             if(args.BytesTransferred > 0 && args.SocketError == SocketError.Success)
             {
@@ -120,7 +120,7 @@ namespace Core
             }
             else
             {
-                // Disconnect
+                //RegisterRecv();
             }
         }
 

@@ -78,10 +78,10 @@ namespace DebugClient
             {
                 foreach (ServerSession session in _sessions)
                 {
-                    DebugPacket packet = new DebugPacket();
-                    packet.name = "ASDF";
+                    NetPrefabSpawneingPacket packet = new NetPrefabSpawneingPacket();
+                    packet.prefabName = Guid.NewGuid().ToString();
                     ArraySegment<byte> segment = packet.Write();
-
+                    Console.WriteLine("1");
                     session.Send(segment);
                 }
             }

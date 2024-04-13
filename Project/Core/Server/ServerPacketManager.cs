@@ -15,19 +15,14 @@ namespace Server
         public override void Register()
         {
 
-            makeFunc.Add((ushort)PacketType.None, MakePacket<DebugPacket>);
-            handler.Add((ushort)PacketType.None, PrefabHandle);
+            makeFunc.Add((ushort)PacketType.NetPrefabSpawneing, MakePacket<NetPrefabSpawneingPacket>);
+            handler.Add((ushort)PacketType.NetPrefabSpawneing, ServerPacketHandler.PrefabHandle);
+            //makeFunc.Add((ushort)PacketType.None, MakePacket<DebugPacket>);
+            //handler.Add((ushort)PacketType.None, PacketHandler.DebugHandler);
 
         }
 
-        public static void PrefabHandle(PacketSession session, IPacket packet)
-        {
-
-            var clientSession = session as ClientSession;
-
-            Program.Room.BroadCast(packet.Write(), clientSession.SessionId);
-
-        }
+        
 
     }
 }

@@ -45,6 +45,13 @@ namespace Core
 
         }
 
+        public static void Serialize(this ushort value, ref ArraySegment<byte> buffer)
+        {
+
+            Array.Copy(BitConverter.GetBytes(value), 0, buffer.Array, buffer.Offset, sizeof(ushort));
+
+        }
+
         public static void Serialize(this string value, ref ArraySegment<byte> buffer, ref ushort count)
         {
 

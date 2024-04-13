@@ -43,7 +43,7 @@ namespace Server
                 foreach (ClientSession s in sessions)
                 {
 
-                    if (s.SessionId == clientId) continue;
+                    //if (s.SessionId == clientId) continue;
 
                     s.Send(segment);    // 리스트에 들어있는 모든 클라에 전송
                 }
