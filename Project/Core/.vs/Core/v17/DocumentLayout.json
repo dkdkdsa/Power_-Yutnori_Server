@@ -1,26 +1,86 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\",
+  "WorkspaceRootPath": "D:\\Github\\Power_-Yutnori_Server\\Project\\Core\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{408821D5-8C15-41D2-8390-084BC377FD73}|Core\\Core.csproj|d:\\unitypj\\power_-yutnori_server\\project\\core\\core\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{408821D5-8C15-41D2-8390-084BC377FD73}|Core\\Core.csproj|D:\\Github\\Power_-Yutnori_Server\\Project\\Core\\core\\packet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{408821D5-8C15-41D2-8390-084BC377FD73}|Core\\Core.csproj|solutionrelative:core\\packet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B83B928C-DBF9-48E0-8A61-6B3DDCA4D384}|DebugClient\\DebugClient.csproj|d:\\github\\power_-yutnori_server\\project\\core\\debugclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B83B928C-DBF9-48E0-8A61-6B3DDCA4D384}|DebugClient\\DebugClient.csproj|solutionrelative:debugclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{408821D5-8C15-41D2-8390-084BC377FD73}|Core\\Core.csproj|d:\\github\\power_-yutnori_server\\project\\core\\core\\packethandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{408821D5-8C15-41D2-8390-084BC377FD73}|Core\\Core.csproj|solutionrelative:core\\packethandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1C20C2D-5EE4-4AD0-9D30-9B5DD1ED216E}|Server\\Server.csproj|d:\\github\\power_-yutnori_server\\project\\core\\server\\serverpacketmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1C20C2D-5EE4-4AD0-9D30-9B5DD1ED216E}|Server\\Server.csproj|solutionrelative:server\\serverpacketmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{408821D5-8C15-41D2-8390-084BC377FD73}|Core\\Core.csproj|d:\\github\\power_-yutnori_server\\project\\core\\core\\serializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{408821D5-8C15-41D2-8390-084BC377FD73}|Core\\Core.csproj|solutionrelative:core\\serializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{408821D5-8C15-41D2-8390-084BC377FD73}|Core\\Core.csproj|D:\\Github\\Power_-Yutnori_Server\\Project\\Core\\core\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{408821D5-8C15-41D2-8390-084BC377FD73}|Core\\Core.csproj|solutionrelative:core\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{408821D5-8C15-41D2-8390-084BC377FD73}|Core\\Core.csproj|d:\\unitypj\\power_-yutnori_server\\project\\core\\core\\sendbuffer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{408821D5-8C15-41D2-8390-084BC377FD73}|Core\\Core.csproj|D:\\Github\\Power_-Yutnori_Server\\Project\\Core\\core\\sendbuffer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{408821D5-8C15-41D2-8390-084BC377FD73}|Core\\Core.csproj|solutionrelative:core\\sendbuffer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{408821D5-8C15-41D2-8390-084BC377FD73}|Core\\Core.csproj|d:\\unitypj\\power_-yutnori_server\\project\\core\\core\\recvbuffer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{408821D5-8C15-41D2-8390-084BC377FD73}|Core\\Core.csproj|D:\\Github\\Power_-Yutnori_Server\\Project\\Core\\core\\recvbuffer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{408821D5-8C15-41D2-8390-084BC377FD73}|Core\\Core.csproj|solutionrelative:core\\recvbuffer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{408821D5-8C15-41D2-8390-084BC377FD73}|Core\\Core.csproj|d:\\unitypj\\power_-yutnori_server\\project\\core\\core\\listener.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{408821D5-8C15-41D2-8390-084BC377FD73}|Core\\Core.csproj|d:\\github\\power_-yutnori_server\\project\\core\\core\\packetmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{408821D5-8C15-41D2-8390-084BC377FD73}|Core\\Core.csproj|solutionrelative:core\\packetmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1C20C2D-5EE4-4AD0-9D30-9B5DD1ED216E}|Server\\Server.csproj|d:\\github\\power_-yutnori_server\\project\\core\\server\\gameroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1C20C2D-5EE4-4AD0-9D30-9B5DD1ED216E}|Server\\Server.csproj|solutionrelative:server\\gameroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1C20C2D-5EE4-4AD0-9D30-9B5DD1ED216E}|Server\\Server.csproj|d:\\github\\power_-yutnori_server\\project\\core\\server\\clientsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1C20C2D-5EE4-4AD0-9D30-9B5DD1ED216E}|Server\\Server.csproj|solutionrelative:server\\clientsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1C20C2D-5EE4-4AD0-9D30-9B5DD1ED216E}|Server\\Server.csproj|d:\\github\\power_-yutnori_server\\project\\core\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1C20C2D-5EE4-4AD0-9D30-9B5DD1ED216E}|Server\\Server.csproj|solutionrelative:server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1C20C2D-5EE4-4AD0-9D30-9B5DD1ED216E}|Server\\Server.csproj|d:\\github\\power_-yutnori_server\\project\\core\\server\\sessionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1C20C2D-5EE4-4AD0-9D30-9B5DD1ED216E}|Server\\Server.csproj|solutionrelative:server\\sessionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{777696BB-83F1-4054-95F6-FEFABDCEB880}|UnityNet\\UnityNet.csproj|d:\\github\\power_-yutnori_server\\project\\core\\unitynet\\unity\\network\\unitypacketmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{777696BB-83F1-4054-95F6-FEFABDCEB880}|UnityNet\\UnityNet.csproj|solutionrelative:unitynet\\unity\\network\\unitypacketmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{777696BB-83F1-4054-95F6-FEFABDCEB880}|UnityNet\\UnityNet.csproj|d:\\github\\power_-yutnori_server\\project\\core\\unitynet\\unity\\network\\networkmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{777696BB-83F1-4054-95F6-FEFABDCEB880}|UnityNet\\UnityNet.csproj|solutionrelative:unitynet\\unity\\network\\networkmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{777696BB-83F1-4054-95F6-FEFABDCEB880}|UnityNet\\UnityNet.csproj|d:\\github\\power_-yutnori_server\\project\\core\\unitynet\\unity\\so\\networkprefabs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{777696BB-83F1-4054-95F6-FEFABDCEB880}|UnityNet\\UnityNet.csproj|solutionrelative:unitynet\\unity\\so\\networkprefabs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{777696BB-83F1-4054-95F6-FEFABDCEB880}|UnityNet\\UnityNet.csproj|d:\\github\\power_-yutnori_server\\project\\core\\unitynet\\unity\\network\\packetqueue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{777696BB-83F1-4054-95F6-FEFABDCEB880}|UnityNet\\UnityNet.csproj|solutionrelative:unitynet\\unity\\network\\packetqueue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{408821D5-8C15-41D2-8390-084BC377FD73}|Core\\Core.csproj|D:\\Github\\Power_-Yutnori_Server\\Project\\Core\\core\\listener.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{408821D5-8C15-41D2-8390-084BC377FD73}|Core\\Core.csproj|solutionrelative:core\\listener.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{408821D5-8C15-41D2-8390-084BC377FD73}|Core\\Core.csproj|d:\\unitypj\\power_-yutnori_server\\project\\core\\core\\connector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{408821D5-8C15-41D2-8390-084BC377FD73}|Core\\Core.csproj|D:\\Github\\Power_-Yutnori_Server\\Project\\Core\\core\\connector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{408821D5-8C15-41D2-8390-084BC377FD73}|Core\\Core.csproj|solutionrelative:core\\connector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{777696BB-83F1-4054-95F6-FEFABDCEB880}|UnityNet\\UnityNet.csproj|d:\\github\\power_-yutnori_server\\project\\core\\unitynet\\unity\\component\\netobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{777696BB-83F1-4054-95F6-FEFABDCEB880}|UnityNet\\UnityNet.csproj|solutionrelative:unitynet\\unity\\component\\netobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,11 +90,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 228,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Bookmark",
@@ -42,65 +102,260 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "ServerPacketManager.cs",
+              "DocumentMoniker": "D:\\Github\\Power_-Yutnori_Server\\Project\\Core\\Server\\ServerPacketManager.cs",
+              "RelativeDocumentMoniker": "Server\\ServerPacketManager.cs",
+              "ToolTip": "D:\\Github\\Power_-Yutnori_Server\\Project\\Core\\Server\\ServerPacketManager.cs",
+              "RelativeToolTip": "Server\\ServerPacketManager.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAnwBEAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T11:28:45.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GameRoom.cs",
+              "DocumentMoniker": "D:\\Github\\Power_-Yutnori_Server\\Project\\Core\\Server\\GameRoom.cs",
+              "RelativeDocumentMoniker": "Server\\GameRoom.cs",
+              "ToolTip": "D:\\Github\\Power_-Yutnori_Server\\Project\\Core\\Server\\GameRoom.cs",
+              "RelativeToolTip": "Server\\GameRoom.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAmwAsAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T11:25:22.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Github\\Power_-Yutnori_Server\\Project\\Core\\DebugClient\\Program.cs",
+              "RelativeDocumentMoniker": "DebugClient\\Program.cs",
+              "ToolTip": "D:\\Github\\Power_-Yutnori_Server\\Project\\Core\\DebugClient\\Program.cs*",
+              "RelativeToolTip": "DebugClient\\Program.cs*",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAvwFAAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T11:23:57.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PacketHandler.cs",
+              "DocumentMoniker": "D:\\Github\\Power_-Yutnori_Server\\Project\\Core\\Core\\PacketHandler.cs",
+              "RelativeDocumentMoniker": "Core\\PacketHandler.cs",
+              "ToolTip": "D:\\Github\\Power_-Yutnori_Server\\Project\\Core\\Core\\PacketHandler.cs",
+              "RelativeToolTip": "Core\\PacketHandler.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAUwBEAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T11:20:07.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PacketManager.cs",
+              "DocumentMoniker": "D:\\Github\\Power_-Yutnori_Server\\Project\\Core\\Core\\PacketManager.cs",
+              "RelativeDocumentMoniker": "Core\\PacketManager.cs",
+              "ToolTip": "D:\\Github\\Power_-Yutnori_Server\\Project\\Core\\Core\\PacketManager.cs",
+              "RelativeToolTip": "Core\\PacketManager.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAYwDAAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T09:56:34.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Session.cs",
-              "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Core\\Session.cs",
+              "DocumentMoniker": "D:\\Github\\Power_-Yutnori_Server\\Project\\Core\\Core\\Session.cs",
               "RelativeDocumentMoniker": "Core\\Session.cs",
-              "ToolTip": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Core\\Session.cs",
+              "ToolTip": "D:\\Github\\Power_-Yutnori_Server\\Project\\Core\\Core\\Session.cs",
               "RelativeToolTip": "Core\\Session.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAAAHYAAAAAAAAA",
+              "ViewState": "AQIAABQAAAAAAAAAAIAwwGMAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-12T03:50:20.583Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SendBuffer.cs",
-              "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Core\\SendBuffer.cs",
-              "RelativeDocumentMoniker": "Core\\SendBuffer.cs",
-              "ToolTip": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Core\\SendBuffer.cs",
-              "RelativeToolTip": "Core\\SendBuffer.cs",
-              "ViewState": "AQIAADgAAAAAAAAAAAAcwCkAAAAUAAAA",
+              "DocumentIndex": 0,
+              "Title": "Packet.cs",
+              "DocumentMoniker": "D:\\Github\\Power_-Yutnori_Server\\Project\\Core\\Core\\Packet.cs",
+              "RelativeDocumentMoniker": "Core\\Packet.cs",
+              "ToolTip": "D:\\Github\\Power_-Yutnori_Server\\Project\\Core\\Core\\Packet.cs",
+              "RelativeToolTip": "Core\\Packet.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAUwB8AAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T03:46:30.4Z",
+              "WhenOpened": "2024-04-13T07:40:14.848Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "RecvBuffer.cs",
-              "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Core\\RecvBuffer.cs",
+              "DocumentMoniker": "D:\\Github\\Power_-Yutnori_Server\\Project\\Core\\Core\\RecvBuffer.cs",
               "RelativeDocumentMoniker": "Core\\RecvBuffer.cs",
-              "ToolTip": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Core\\RecvBuffer.cs",
+              "ToolTip": "D:\\Github\\Power_-Yutnori_Server\\Project\\Core\\Core\\RecvBuffer.cs",
               "RelativeToolTip": "Core\\RecvBuffer.cs",
-              "ViewState": "AQIAACcAAAAAAAAAAAAQwAgAAAAEAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-12T03:44:46.373Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
+              "Title": "SendBuffer.cs",
+              "DocumentMoniker": "D:\\Github\\Power_-Yutnori_Server\\Project\\Core\\Core\\SendBuffer.cs",
+              "RelativeDocumentMoniker": "Core\\SendBuffer.cs",
+              "ToolTip": "D:\\Github\\Power_-Yutnori_Server\\Project\\Core\\Core\\SendBuffer.cs",
+              "RelativeToolTip": "Core\\SendBuffer.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAYwAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T03:46:30.4Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Serializer.cs",
+              "DocumentMoniker": "D:\\Github\\Power_-Yutnori_Server\\Project\\Core\\Core\\Serializer.cs",
+              "RelativeDocumentMoniker": "Core\\Serializer.cs",
+              "ToolTip": "D:\\Github\\Power_-Yutnori_Server\\Project\\Core\\Core\\Serializer.cs",
+              "RelativeToolTip": "Core\\Serializer.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAA3wDcAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T10:07:25.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ClientSession.cs",
+              "DocumentMoniker": "D:\\Github\\Power_-Yutnori_Server\\Project\\Core\\Server\\ClientSession.cs",
+              "RelativeDocumentMoniker": "Server\\ClientSession.cs",
+              "ToolTip": "D:\\Github\\Power_-Yutnori_Server\\Project\\Core\\Server\\ClientSession.cs",
+              "RelativeToolTip": "Server\\ClientSession.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAkwCUAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T11:24:22.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Github\\Power_-Yutnori_Server\\Project\\Core\\Server\\Program.cs",
+              "RelativeDocumentMoniker": "Server\\Program.cs",
+              "ToolTip": "D:\\Github\\Power_-Yutnori_Server\\Project\\Core\\Server\\Program.cs",
+              "RelativeToolTip": "Server\\Program.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwAoAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T11:23:37.712Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SessionManager.cs",
+              "DocumentMoniker": "D:\\Github\\Power_-Yutnori_Server\\Project\\Core\\Server\\SessionManager.cs",
+              "RelativeDocumentMoniker": "Server\\SessionManager.cs",
+              "ToolTip": "D:\\Github\\Power_-Yutnori_Server\\Project\\Core\\Server\\SessionManager.cs",
+              "RelativeToolTip": "Server\\SessionManager.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAADwvzEAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T11:27:15.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UnityPacketManager.cs",
+              "DocumentMoniker": "D:\\Github\\Power_-Yutnori_Server\\Project\\Core\\UnityNet\\Unity\\Network\\UnityPacketManager.cs",
+              "RelativeDocumentMoniker": "UnityNet\\Unity\\Network\\UnityPacketManager.cs",
+              "ToolTip": "D:\\Github\\Power_-Yutnori_Server\\Project\\Core\\UnityNet\\Unity\\Network\\UnityPacketManager.cs",
+              "RelativeToolTip": "UnityNet\\Unity\\Network\\UnityPacketManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T09:58:55.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "PacketQueue.cs",
+              "DocumentMoniker": "D:\\Github\\Power_-Yutnori_Server\\Project\\Core\\UnityNet\\Unity\\Network\\PacketQueue.cs",
+              "RelativeDocumentMoniker": "UnityNet\\Unity\\Network\\PacketQueue.cs",
+              "ToolTip": "D:\\Github\\Power_-Yutnori_Server\\Project\\Core\\UnityNet\\Unity\\Network\\PacketQueue.cs",
+              "RelativeToolTip": "UnityNet\\Unity\\Network\\PacketQueue.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAYwAUAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T09:54:04.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "NetworkPrefabs.cs",
+              "DocumentMoniker": "D:\\Github\\Power_-Yutnori_Server\\Project\\Core\\UnityNet\\Unity\\SO\\NetworkPrefabs.cs",
+              "RelativeDocumentMoniker": "UnityNet\\Unity\\SO\\NetworkPrefabs.cs",
+              "ToolTip": "D:\\Github\\Power_-Yutnori_Server\\Project\\Core\\UnityNet\\Unity\\SO\\NetworkPrefabs.cs",
+              "RelativeToolTip": "UnityNet\\Unity\\SO\\NetworkPrefabs.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T09:54:04.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "NetworkManager.cs",
+              "DocumentMoniker": "D:\\Github\\Power_-Yutnori_Server\\Project\\Core\\UnityNet\\Unity\\Network\\NetworkManager.cs",
+              "RelativeDocumentMoniker": "UnityNet\\Unity\\Network\\NetworkManager.cs",
+              "ToolTip": "D:\\Github\\Power_-Yutnori_Server\\Project\\Core\\UnityNet\\Unity\\Network\\NetworkManager.cs",
+              "RelativeToolTip": "UnityNet\\Unity\\Network\\NetworkManager.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAYwCQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T09:53:58.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "NetObject.cs",
+              "DocumentMoniker": "D:\\Github\\Power_-Yutnori_Server\\Project\\Core\\UnityNet\\Unity\\Component\\NetObject.cs",
+              "RelativeDocumentMoniker": "UnityNet\\Unity\\Component\\NetObject.cs",
+              "ToolTip": "D:\\Github\\Power_-Yutnori_Server\\Project\\Core\\UnityNet\\Unity\\Component\\NetObject.cs",
+              "RelativeToolTip": "UnityNet\\Unity\\Component\\NetObject.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T09:53:31.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "Listener.cs",
-              "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Core\\Listener.cs",
+              "DocumentMoniker": "D:\\Github\\Power_-Yutnori_Server\\Project\\Core\\Core\\Listener.cs",
               "RelativeDocumentMoniker": "Core\\Listener.cs",
-              "ToolTip": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Core\\Listener.cs",
+              "ToolTip": "D:\\Github\\Power_-Yutnori_Server\\Project\\Core\\Core\\Listener.cs",
               "RelativeToolTip": "Core\\Listener.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEIAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-12T03:43:10.458Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 18,
               "Title": "Connector.cs",
-              "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Core\\Connector.cs",
+              "DocumentMoniker": "D:\\Github\\Power_-Yutnori_Server\\Project\\Core\\Core\\Connector.cs",
               "RelativeDocumentMoniker": "Core\\Connector.cs",
-              "ToolTip": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Core\\Connector.cs",
+              "ToolTip": "D:\\Github\\Power_-Yutnori_Server\\Project\\Core\\Core\\Connector.cs",
               "RelativeToolTip": "Core\\Connector.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAACMAAAAPAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-12T03:40:50.211Z",
               "EditorCaption": ""

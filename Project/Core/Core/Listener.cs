@@ -5,7 +5,7 @@ using System.Net.Sockets;
 using System.Net;
 using System.Text;
 
-namespace ServerCore
+namespace Core
 {
     public class Listener
     {

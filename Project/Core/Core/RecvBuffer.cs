@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ServerCore {
+namespace Core
+{
     class RecvBuffer 
     {
 

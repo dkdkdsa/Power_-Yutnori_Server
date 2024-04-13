@@ -7,7 +7,7 @@ using System.Net.Sockets;
 using System.Net;
 using System.Threading;
 
-namespace ServerCore
+namespace Core
 {
     public abstract class PacketSession : Session 
     {

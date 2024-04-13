@@ -5,7 +5,8 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace ServerCore {
+namespace Core
+{
     public class SendBufferHelper 
     {
 
