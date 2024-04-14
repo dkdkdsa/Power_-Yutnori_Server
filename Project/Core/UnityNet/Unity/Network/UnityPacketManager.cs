@@ -16,7 +16,10 @@ namespace UnityNet
         {
 
             makeFunc.Add((ushort)PacketType.NetPrefabSpawneing, MakePacket<NetPrefabSpawneingPacket>);
+            makeFunc.Add((ushort)PacketType.GameEnterPacket, MakePacket<GameEnterPacket>);
+
             handler.Add((ushort)PacketType.NetPrefabSpawneing, NetPrefabHandle);
+            handler.Add((ushort)PacketType.GameEnterPacket, GameEnterHandle);
 
         }
 
@@ -24,7 +27,21 @@ namespace UnityNet
         {
 
             var prefabPacket = packet as NetPrefabSpawneingPacket;
-            NetworkManager.Instance.SpawnNetObject(prefabPacket.prefabName, prefabPacket.position, prefabPacket.rotation, false);
+            NetworkManager.Instance.SyncNetObject(prefabPacket.prefabName, prefabPacket.position, prefabPacket.rotation, prefabPacket.hash);
+
+        }
+
+        private void GameEnterHandle(PacketSession session, IPacket packet)
+        {
+
+            var prefabPacket = packet as GameEnterPacket;
+
+            foreach(var item in prefabPacket.datas)
+            {
+
+                NetworkManager.Instance.SyncNetObject(item.prefabName, item.position, item.rotaitoin, item.hash);
+
+            }
 
         }
 

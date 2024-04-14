@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Core;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,16 +9,27 @@ namespace Server
 {
     class GameRoom
     {
-        List<ClientSession> sessions = new List<ClientSession>();
-        object handler = new object();
+
+        private List<NetObjectData> datas = new List<NetObjectData>();
+        private List<ClientSession> sessions = new List<ClientSession>();
+        private object handler = new object();
 
 
         public void Enter(ClientSession session)
         {
             lock (handler)
-            {   // 신규 유저 추가
+            { 
+
                 sessions.Add(session);
                 session.Room = this;
+
+                if(datas.Count > 0 )
+                {
+
+                    var enterPacket = new GameEnterPacket(datas);
+                    session.Send(enterPacket.Write());
+
+                }
 
             }
 
@@ -43,11 +55,18 @@ namespace Server
                 foreach (ClientSession s in sessions)
                 {
 
-                    //if (s.SessionId == clientId) continue;
+                    if (s.SessionId == clientId) continue;
 
                     s.Send(segment);    // 리스트에 들어있는 모든 클라에 전송
                 }
             }
+        }
+
+        public void AddObjectData(NetObjectData data)
+        {
+
+            datas.Add(data);
+
         }
 
     }

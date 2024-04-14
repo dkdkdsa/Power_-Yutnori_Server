@@ -11,4 +11,14 @@
     <ProjectReference Include="..\Core\Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Dlls\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>Dlls\UnityEngine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

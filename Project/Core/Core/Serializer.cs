@@ -45,6 +45,14 @@ namespace Core
 
         }
 
+        public static void Serialize(this int value, ref ArraySegment<byte> buffer, ref ushort count)
+        {
+
+            Array.Copy(BitConverter.GetBytes(value), 0, buffer.Array, buffer.Offset + count, sizeof(int));
+            count += sizeof(int);
+
+        }
+
         public static void Serialize(this ushort value, ref ArraySegment<byte> buffer)
         {
 
@@ -62,6 +70,20 @@ namespace Core
             Array.Copy(array, 0, buffer.Array, buffer.Offset + count, array.Length);
             count += (ushort)array.Length;
 
+
+        }
+
+        public static void Serialize<T>(this List<T> list, ref ArraySegment<byte> buffer, ref ushort count) where T : INetSerializeable
+        {
+
+            list.Count.Serialize(ref buffer, ref count);
+
+            foreach(var item in list)
+            {
+
+                item.Serialze(ref buffer, ref count);
+
+            }
 
         }
 
@@ -99,6 +121,14 @@ namespace Core
 
         }
 
+        public static void Deserialize(ref int value, ref ArraySegment<byte> buffer, ref ushort count)
+        {
+
+            value = BitConverter.ToInt32(buffer.Array, buffer.Offset + count);
+            count += sizeof(int);
+
+        }
+
         public static void Deserialize(ref string value, ref ArraySegment<byte> buffer, ref ushort count)
         {
 
@@ -107,6 +137,23 @@ namespace Core
 
             value = Encoding.UTF8.GetString(buffer.Array, count, lenght);
             count += lenght;
+
+        }
+
+        public static void Deserialize<T>(List<T> list, ref ArraySegment<byte> buffer, ref ushort count) where T : INetSerializeable, new()
+        {
+
+            int lenght = 0;
+            Deserialize(ref lenght, ref buffer, ref count);
+
+            for(int i = 0; i < lenght; i++)
+            {
+
+                var t = new T();
+                t.Deserialze(ref buffer, ref count);
+                list.Add(t);
+
+            }
 
         }
 

@@ -43,7 +43,6 @@ namespace UnityNet
         public override void OnSend(int numOfBytes)
         {
 
-            Debug.Log(numOfBytes);
 
         }
 

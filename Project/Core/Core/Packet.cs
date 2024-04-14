@@ -14,6 +14,7 @@ namespace Core
 
         None,
         NetPrefabSpawneing,
+        GameEnterPacket,
 
     }
 
@@ -52,7 +53,7 @@ namespace Core
             position.Serialize(ref segment, ref count);
             name.Serialize(ref segment, ref count);
 
-            return segment;
+            return SendBufferHelper.Close(count);
 
         }
 
@@ -64,17 +65,19 @@ namespace Core
     {
         public ushort Protocol => (ushort)PacketType.NetPrefabSpawneing;
 
-        public NetPrefabSpawneingPacket(Vector3 position, Quaternion rotation, string prefabName)
+        public NetPrefabSpawneingPacket(int hash, Vector3 position, Quaternion rotation, string prefabName)
         {
 
+            this.hash = hash;
             this.position = position;
             this.rotation = rotation;
             this.prefabName = prefabName;
 
         }
 
-        public NetPrefabSpawneingPacket() { }   
+        public NetPrefabSpawneingPacket() { }
 
+        public int hash;
         public Vector3 position;
         public Quaternion rotation;
         public string prefabName;
@@ -85,6 +88,7 @@ namespace Core
             ushort count = sizeof(ushort);
             count += sizeof(ushort);
 
+            Serializer.Deserialize(ref hash, ref segment, ref count);
             Serializer.Deserialize(ref position, ref segment, ref count);
             Serializer.Deserialize(ref rotation, ref segment, ref count);
             Serializer.Deserialize(ref prefabName, ref segment, ref count);
@@ -98,10 +102,51 @@ namespace Core
             ushort count = sizeof(ushort);
 
             Protocol.Serialize(ref segment, ref count);
+            hash.Serialize(ref segment, ref count);
             position.Serialize(ref segment, ref count);
             rotation.Serialize(ref segment, ref count);
             prefabName.Serialize(ref segment, ref count);
             count.Serialize(ref segment);
+
+            return SendBufferHelper.Close(count);
+
+        }
+
+    }
+
+    public class GameEnterPacket : IPacket
+    {
+        public ushort Protocol => (ushort)PacketType.GameEnterPacket;
+
+        public List<NetObjectData> datas = new List<NetObjectData>();
+
+        public GameEnterPacket(List<NetObjectData> datas)
+        {
+            this.datas = datas;
+        }
+
+        public GameEnterPacket() { }
+
+        public void Read(ArraySegment<byte> segment)
+        {
+
+            ushort count = sizeof(ushort);
+            count += sizeof(ushort);
+
+            Serializer.Deserialize(datas, ref segment, ref count);
+
+        }
+
+        public ArraySegment<byte> Write()
+        {
+
+            ArraySegment<byte> segment = SendBufferHelper.Open(4096);
+            ushort count = sizeof(ushort);
+
+            Protocol.Serialize(ref segment, ref count);
+            datas.Serialize(ref segment, ref count);
+
+            Serializer.Serialize(count, ref segment);
 
             return SendBufferHelper.Close(count);
 

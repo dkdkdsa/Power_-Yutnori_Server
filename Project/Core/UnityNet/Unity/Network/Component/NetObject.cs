@@ -6,7 +6,7 @@ namespace UnityNet
     public class NetObject : MonoBehaviour
     {
 
-        [HideInInspector] public int objectHash;
+        public int objectHash { get; private set; }
 
         public void Spawn(int objectHash)
         {

@@ -80,6 +80,7 @@ namespace DebugClient
                 {
                     NetPrefabSpawneingPacket packet = new NetPrefabSpawneingPacket();
                     packet.prefabName = Guid.NewGuid().ToString();
+                    packet.hash = Guid.NewGuid().GetHashCode();  
                     ArraySegment<byte> segment = packet.Write();
                     Console.WriteLine("1");
                     session.Send(segment);

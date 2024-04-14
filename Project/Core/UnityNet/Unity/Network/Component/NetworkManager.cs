@@ -58,7 +58,7 @@ namespace UnityNet
 
         }
 
-        public NetObject SpawnNetObject(string prefabName, Vector3 pos, Quaternion rot, bool synchronization = true)
+        public NetObject SpawnNetObject(string prefabName, Vector3 pos, Quaternion rot)
         {
 
             var prefab = prefabs.prefabs.Find(x => x.name == prefabName);
@@ -71,15 +71,34 @@ namespace UnityNet
 
             }
 
-            if (synchronization) 
+            int hash = Guid.NewGuid().GetHashCode();
+
+
+            NetPrefabSpawneingPacket packet = new NetPrefabSpawneingPacket(hash, pos, rot, prefabName);
+            session.Send(packet.Write());
+
+            var obj = Instantiate(prefab, pos, rot);
+            obj.Spawn(hash);
+
+            return obj;
+
+        }
+
+        public void SyncNetObject(string prefabName, Vector3 pos, Quaternion rot, int hash)
+        {
+
+            var prefab = prefabs.prefabs.Find(x => x.name == prefabName);
+
+            if (prefab == null)
             {
 
-                NetPrefabSpawneingPacket packet = new NetPrefabSpawneingPacket(pos, rot, prefabName);
-                session.Send(packet.Write());
+                Debug.LogError($"{prefabName}이라는 이름의 NetPrefab이 존재하지 않습니다!");
+
 
             }
 
-            return Instantiate(prefab, pos, rot);
+            var obj = Instantiate(prefab, pos, rot);
+            obj.Spawn(hash);
 
         }
 
