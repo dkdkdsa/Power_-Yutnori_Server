@@ -36,6 +36,8 @@ namespace UnityNet
 
             var prefabPacket = packet as GameEnterPacket;
 
+            NetworkManager.Instance.SetClientId(prefabPacket.clientId);
+
             foreach(var item in prefabPacket.datas)
             {
 

@@ -19,7 +19,7 @@ namespace UnityNet
 
         private UnitySession session;
 
-        public ulong ClientId { get; private set; }
+        public int ClientId { get; private set; }
         public bool IsConnected { get; private set; }
         public static NetworkManager Instance { get; private set; }
 
@@ -99,6 +99,15 @@ namespace UnityNet
 
             var obj = Instantiate(prefab, pos, rot);
             obj.Spawn(hash);
+
+        }
+
+        public void SetClientId(int clientId)
+        {
+
+            if (clientId != 0) return;
+
+            ClientId = clientId;
 
         }
 

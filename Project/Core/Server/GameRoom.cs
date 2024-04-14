@@ -26,7 +26,7 @@ namespace Server
                 if(datas.Count > 0 )
                 {
 
-                    var enterPacket = new GameEnterPacket(datas);
+                    var enterPacket = new GameEnterPacket(datas, session.SessionId);
                     session.Send(enterPacket.Write());
 
                 }

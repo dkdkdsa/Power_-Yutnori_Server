@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +16,7 @@ namespace Core
         None,
         NetPrefabSpawneing,
         GameEnterPacket,
+        ClientJoinPacket
 
     }
 
@@ -119,10 +121,12 @@ namespace Core
         public ushort Protocol => (ushort)PacketType.GameEnterPacket;
 
         public List<NetObjectData> datas = new List<NetObjectData>();
+        public int clientId;
 
-        public GameEnterPacket(List<NetObjectData> datas)
+        public GameEnterPacket(List<NetObjectData> datas, int clientId)
         {
             this.datas = datas;
+            this.clientId = clientId;
         }
 
         public GameEnterPacket() { }
@@ -134,6 +138,7 @@ namespace Core
             count += sizeof(ushort);
 
             Serializer.Deserialize(datas, ref segment, ref count);
+            Serializer.Deserialize(ref clientId, ref segment, ref count);
 
         }
 
@@ -145,6 +150,41 @@ namespace Core
 
             Protocol.Serialize(ref segment, ref count);
             datas.Serialize(ref segment, ref count);
+            clientId.Serialize(ref segment, ref count);
+
+            Serializer.Serialize(count, ref segment);
+
+            return SendBufferHelper.Close(count);
+
+        }
+
+    }
+
+    public class ClientJoinPacket : IPacket
+    {
+        public ushort Protocol => (ushort)PacketType.ClientJoinPacket;
+
+        public int clientId;
+
+        public void Read(ArraySegment<byte> segment)
+        {
+
+
+            ushort count = sizeof(ushort);
+            count += sizeof(ushort);
+
+            Serializer.Deserialize(ref clientId, ref segment, ref count);
+
+        }
+
+        public ArraySegment<byte> Write()
+        {
+
+            ArraySegment<byte> segment = SendBufferHelper.Open(4096);
+            ushort count = sizeof(ushort);
+
+            Protocol.Serialize(ref segment, ref count);
+            clientId.Serialize(ref segment, ref count);
 
             Serializer.Serialize(count, ref segment);
 
