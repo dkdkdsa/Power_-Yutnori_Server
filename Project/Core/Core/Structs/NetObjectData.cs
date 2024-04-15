@@ -15,7 +15,7 @@ namespace Core
         public Quaternion rotaitoin;
         public string prefabName;
 
-        public void Serialze(ref ArraySegment<byte> buffer, ref ushort count)
+        public void Serialize(ref ArraySegment<byte> buffer, ref ushort count)
         {
 
             hash.Serialize(ref buffer, ref count);
@@ -25,7 +25,7 @@ namespace Core
 
         }
 
-        public void Deserialze(ref ArraySegment<byte> buffer, ref ushort count)
+        public void Deserialize(ref ArraySegment<byte> buffer, ref ushort count)
         {
 
             Serializer.Deserialize(ref hash, ref buffer, ref count);

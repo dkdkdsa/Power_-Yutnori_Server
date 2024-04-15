@@ -89,7 +89,7 @@ namespace Core
             foreach(var item in list)
             {
 
-                item.Serialze(ref buffer, ref count);
+                item.Serialize(ref buffer, ref count);
 
             }
 
@@ -166,7 +166,7 @@ namespace Core
             {
 
                 var t = new T();
-                t.Deserialze(ref buffer, ref count);
+                t.Deserialize(ref buffer, ref count);
                 list.Add(t);
 
             }

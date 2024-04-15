@@ -55,6 +55,7 @@
     <Compile Include="SendBuffer.cs" />
     <Compile Include="Serializer.cs" />
     <Compile Include="Session.cs" />
+    <Compile Include="Structs\BufferSaver.cs" />
     <Compile Include="Structs\NetObjectData.cs" />
   </ItemGroup>
   <ItemGroup>

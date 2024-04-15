@@ -17,9 +17,11 @@ namespace Server
 
             makeFunc.Add((ushort)PacketType.NetPrefabSpawneing, MakePacket<NetPrefabSpawneingPacket>);
             makeFunc.Add((ushort)PacketType.MethodLinkPacket, MakePacket<MethodLinkPacket>);
+            makeFunc.Add((ushort)PacketType.MethodLinkParamPacket, MakePacket<MethodLinkPacketParam>);
 
             handler.Add((ushort)PacketType.NetPrefabSpawneing, PrefabSpawnHandle);
             handler.Add((ushort)PacketType.MethodLinkPacket, MethodLinkHandle);
+            handler.Add((ushort)PacketType.MethodLinkParamPacket, MethodLinkParamHandle);
 
         }
 
@@ -49,6 +51,16 @@ namespace Server
         {
 
             var p = packet as MethodLinkPacket;
+            int clientId = p.immediatelyCalled ? (session as ClientSession).SessionId : -1;
+
+            Program.Room.BroadCast(packet.Write(), clientId);
+
+        }
+
+        public static void MethodLinkParamHandle(PacketSession session, IPacket packet)
+        {
+
+            var p = packet as MethodLinkPacketParam;
             int clientId = p.immediatelyCalled ? (session as ClientSession).SessionId : -1;
 
             Program.Room.BroadCast(packet.Write(), clientId);

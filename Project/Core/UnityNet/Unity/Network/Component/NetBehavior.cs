@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Core;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,7 +25,14 @@ namespace UnityNet
         public void LinkMethod(Action method, bool immediatelyCall = false)
         {
 
-            NetworkManager.Instance.LinkMethod(method, NetObject.objectHash, immediatelyCall);
+            NetworkManager.Instance.LinkMethod(method, NetObject.Hash, immediatelyCall);
+
+        }
+
+        public void LinkMethod<T>(Action<T> method, T param, bool immediatelyCall = false) where T : INetSerializeable
+        {
+
+            NetworkManager.Instance.LinkMethod<T>(method, NetObject.Hash, param, immediatelyCall);
 
         }
 

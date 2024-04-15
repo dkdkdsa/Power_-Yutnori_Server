@@ -17,8 +17,8 @@ namespace Core
         NetPrefabSpawneing,
         GameEnterPacket,
         ClientJoinPacket,
-        MethodLinkPacket
-
+        MethodLinkPacket,
+        MethodLinkParamPacket
 
     }
 
@@ -69,14 +69,14 @@ namespace Core
     {
         public ushort Protocol => (ushort)PacketType.NetPrefabSpawneing;
 
-        public NetPrefabSpawneingPacket(int hash, Vector3 position, Quaternion rotation, string prefabName)
+        public NetPrefabSpawneingPacket(int hash, Vector3 position, Quaternion rotation, string prefabName, int ownerId)
         {
 
             this.hash = hash;
             this.position = position;
             this.rotation = rotation;
             this.prefabName = prefabName;
-
+            this.ownerId = ownerId;
         }
 
         public NetPrefabSpawneingPacket() { }
@@ -85,6 +85,7 @@ namespace Core
         public Vector3 position;
         public Quaternion rotation;
         public string prefabName;
+        public int ownerId;
 
         public void Read(ArraySegment<byte> segment)
         {
@@ -96,6 +97,7 @@ namespace Core
             Serializer.Deserialize(ref position, ref segment, ref count);
             Serializer.Deserialize(ref rotation, ref segment, ref count);
             Serializer.Deserialize(ref prefabName, ref segment, ref count);
+            Serializer.Deserialize(ref ownerId, ref segment, ref count);
 
         }
 
@@ -110,6 +112,8 @@ namespace Core
             position.Serialize(ref segment, ref count);
             rotation.Serialize(ref segment, ref count);
             prefabName.Serialize(ref segment, ref count);
+            ownerId.Serialize(ref segment, ref count);
+
             count.Serialize(ref segment);
 
             return SendBufferHelper.Close(count);
@@ -238,6 +242,74 @@ namespace Core
             methodName.Serialize(ref segment, ref count);
             componentName.Serialize(ref segment, ref count);
             immediatelyCalled.Serialize(ref segment, ref count);
+
+            count.Serialize(ref segment);
+
+            return SendBufferHelper.Close(count);
+
+        }
+
+    }
+
+    /// <summary>
+    /// 매계변수가 있는 메서드의 동기화
+    /// </summary>
+    public class MethodLinkPacketParam : IPacket
+    {
+        public ushort Protocol => (ushort)PacketType.MethodLinkParamPacket;
+
+        public int objectHash;
+        public string methodName;
+        public string componentName;
+        public bool immediatelyCalled;
+        public string typeName;
+        public BufferSaver saver;
+
+        public MethodLinkPacketParam(int objectHash, string methodName, string componentName, INetSerializeable param, bool immediatelyCalled)
+        {
+
+            this.objectHash = objectHash;
+            this.methodName = methodName;
+            this.componentName = componentName;
+            this.immediatelyCalled = immediatelyCalled;
+
+            typeName = param.GetType().Name;
+
+            saver = new BufferSaver();
+            saver.Saving(param);
+
+        }
+
+        public MethodLinkPacketParam() { }
+
+        public void Read(ArraySegment<byte> segment)
+        {
+
+            ushort count = sizeof(ushort);
+            count += sizeof(ushort);
+
+            Serializer.Deserialize(ref objectHash, ref segment, ref count);
+            Serializer.Deserialize(ref methodName, ref segment, ref count);
+            Serializer.Deserialize(ref componentName, ref segment, ref count);
+            Serializer.Deserialize(ref immediatelyCalled, ref segment, ref count);
+            Serializer.Deserialize(ref typeName, ref segment, ref count);
+            saver.Deserialize(ref segment, ref count);
+
+        }
+
+        public ArraySegment<byte> Write()
+        {
+
+            ArraySegment<byte> segment = SendBufferHelper.Open(4096);
+            ushort count = sizeof(ushort);
+
+            Protocol.Serialize(ref segment, ref count);
+            objectHash.Serialize(ref segment, ref count);
+            methodName.Serialize(ref segment, ref count);
+            componentName.Serialize(ref segment, ref count);
+            immediatelyCalled.Serialize(ref segment, ref count);
+            typeName.Serialize(ref segment, ref count);
+            saver.Serialize(ref segment, ref count);
 
             count.Serialize(ref segment);
 

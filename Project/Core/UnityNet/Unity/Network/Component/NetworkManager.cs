@@ -59,7 +59,7 @@ namespace UnityNet
 
         }
 
-        public NetObject SpawnNetObject(string prefabName, Vector3 pos, Quaternion rot)
+        public NetObject SpawnNetObject(string prefabName, Vector3 pos, Quaternion rot, int ownerClientId = -1)
         {
 
             var prefab = prefabs.prefabs.Find(x => x.name == prefabName);
@@ -75,11 +75,11 @@ namespace UnityNet
             int hash = Guid.NewGuid().GetHashCode();
 
 
-            NetPrefabSpawneingPacket packet = new NetPrefabSpawneingPacket(hash, pos, rot, prefabName);
+            NetPrefabSpawneingPacket packet = new NetPrefabSpawneingPacket(hash, pos, rot, prefabName, ownerClientId);
             session.Send(packet.Write());
 
             var obj = Instantiate(prefab, pos, rot);
-            obj.Spawn(hash);
+            obj.Spawn(hash, ownerClientId);
 
             netObjectContainer.Add(hash, obj);
 
@@ -87,7 +87,7 @@ namespace UnityNet
 
         }
 
-        public void SyncNetObject(string prefabName, Vector3 pos, Quaternion rot, int hash)
+        public void SyncNetObject(string prefabName, Vector3 pos, Quaternion rot, int hash, int ownerClientId = -1)
         {
 
             var prefab = prefabs.prefabs.Find(x => x.name == prefabName);
@@ -100,7 +100,7 @@ namespace UnityNet
             }
 
             var obj = Instantiate(prefab, pos, rot);
-            obj.Spawn(hash);
+            obj.Spawn(hash, -1);
 
             netObjectContainer.Add(hash, obj);
 
@@ -130,6 +130,21 @@ namespace UnityNet
 
         }
 
+        public void LinkMethod<T>(Action<T> method, int senderHash, T param, bool immediatelyCall = false) where T : INetSerializeable
+        {
+
+            if (immediatelyCall)
+            {
+
+                method.Invoke(param);
+
+            }
+
+            var packet = new MethodLinkPacketParam(senderHash, method.Method.Name, method.Target.GetType().Name, param, immediatelyCall);
+            session.Send(packet.Write());
+
+        }
+
         public void LinkMethodInvoke(string method, string componentName, int hash) 
         {
             
@@ -146,6 +161,37 @@ namespace UnityNet
                 }
 
                 compo.Invoke(method, 0);
+
+            }
+            else
+            {
+
+                Debug.LogWarning($"해시값이 누락되었습니다 값 : {hash}");
+
+            }
+
+        }
+
+        public void LinkMethodInvoke(string method, string componentName, int hash, INetSerializeable param)
+        {
+
+            if (netObjectContainer.TryGetValue(hash, out var obj))
+            {
+
+                var compo = obj.GetComponent(componentName) as NetBehavior;
+
+                if (compo == null)
+                {
+
+                    Debug.LogWarning($"컴포넌트가 누락되었습니다 이름 : {componentName}");
+
+                }
+
+                var t = compo.GetType();
+
+                var info = t.GetMethod(method, new[] { param.GetType() });
+
+                info.Invoke(compo, new[]{ param });
 
             }
             else

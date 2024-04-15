@@ -9,8 +9,8 @@ namespace Core
     public interface INetSerializeable
     {
 
-        void Serialze(ref ArraySegment<byte> buffer, ref ushort count);
-        void Deserialze(ref ArraySegment<byte> buffer, ref ushort count);
+        void Serialize(ref ArraySegment<byte> buffer, ref ushort count);
+        void Deserialize(ref ArraySegment<byte> buffer, ref ushort count);
 
     }
 

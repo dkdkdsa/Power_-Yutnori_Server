@@ -48,6 +48,7 @@
     <Compile Include="Unity\Network\Component\NetBehavior.cs" />
     <Compile Include="Unity\Network\Component\NetObject.cs" />
     <Compile Include="Unity\Network\Component\NetworkManager.cs" />
+    <Compile Include="Unity\Network\Event\LocalNetworkEvent.cs" />
     <Compile Include="Unity\Network\PacketQueue.cs" />
     <Compile Include="Unity\Network\UnityPacketManager.cs" />
     <Compile Include="Unity\Network\UnitySession.cs" />

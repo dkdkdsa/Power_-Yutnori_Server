@@ -1,7 +1,9 @@
 ﻿using Core;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -18,10 +20,12 @@ namespace UnityNet
             makeFunc.Add((ushort)PacketType.NetPrefabSpawneing, MakePacket<NetPrefabSpawneingPacket>);
             makeFunc.Add((ushort)PacketType.GameEnterPacket, MakePacket<GameEnterPacket>);
             makeFunc.Add((ushort)PacketType.MethodLinkPacket, MakePacket<MethodLinkPacket>);
+            makeFunc.Add((ushort)PacketType.MethodLinkParamPacket, MakePacket<MethodLinkPacketParam>);
 
             handler.Add((ushort)PacketType.NetPrefabSpawneing, NetPrefabHandle);
             handler.Add((ushort)PacketType.GameEnterPacket, GameEnterHandle);
             handler.Add((ushort)PacketType.MethodLinkPacket, LinkMethodHandle);
+            handler.Add((ushort)PacketType.MethodLinkParamPacket, LinkMethodParamHandle);
 
         }
 
@@ -57,6 +61,17 @@ namespace UnityNet
             NetworkManager.Instance.LinkMethodInvoke(p.methodName, p.componentName, p.objectHash);
 
         }
+
+        private void LinkMethodParamHandle(PacketSession session, IPacket packet)
+        {
+
+            var p = packet as MethodLinkPacketParam;
+
+            LocalNetworkEvent.MethodLinkEvent?.Invoke(p);
+           
+
+        }
+
 
     }
 

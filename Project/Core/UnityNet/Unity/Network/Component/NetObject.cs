@@ -8,12 +8,17 @@ namespace UnityNet
     public class NetObject : MonoBehaviour
     {
 
-        public int objectHash { get; private set; }
+        public bool IsOwner => NetworkManager.Instance.ClientId == OwnerCliendId;
+        public bool IsHaveOwner => OwnerCliendId != -1;
 
-        public void Spawn(int objectHash)
+        public int Hash { get; private set; }
+        public int OwnerCliendId { get; private set; } = -1;
+
+        public void Spawn(int objectHash, int ownerClientId)
         {
 
-            this.objectHash = objectHash;
+            Hash = objectHash;
+            OwnerCliendId = ownerClientId;
 
         }
         
