@@ -48,7 +48,10 @@ namespace Server
         public static void MethodLinkHandle(PacketSession session, IPacket packet)
         {
 
-            Program.Room.BroadCast(packet.Write());
+            var p = packet as MethodLinkPacket;
+            int clientId = p.immediatelyCalled ? (session as ClientSession).SessionId : -1;
+
+            Program.Room.BroadCast(packet.Write(), clientId);
 
         }
 

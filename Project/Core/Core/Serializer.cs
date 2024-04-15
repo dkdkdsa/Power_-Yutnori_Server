@@ -53,6 +53,14 @@ namespace Core
 
         }
 
+        public static void Serialize(this bool value, ref ArraySegment<byte> buffer, ref ushort count)
+        {
+
+            Array.Copy(BitConverter.GetBytes(value), 0, buffer.Array, buffer.Offset + count, sizeof(bool));
+            count += sizeof(bool);
+
+        }
+
         public static void Serialize(this ushort value, ref ArraySegment<byte> buffer)
         {
 
@@ -126,6 +134,14 @@ namespace Core
 
             value = BitConverter.ToInt32(buffer.Array, buffer.Offset + count);
             count += sizeof(int);
+
+        }
+
+        public static void Deserialize(ref bool value, ref ArraySegment<byte> buffer, ref ushort count)
+        {
+
+            value = BitConverter.ToBoolean(buffer.Array, buffer.Offset + count);
+            count += sizeof(bool);
 
         }
 

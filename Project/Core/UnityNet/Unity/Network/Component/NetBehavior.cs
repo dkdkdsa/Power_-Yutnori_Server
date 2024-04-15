@@ -21,10 +21,10 @@ namespace UnityNet
 
         }
 
-        public void LinkMethod(Action method)
+        public void LinkMethod(Action method, bool immediatelyCall = false)
         {
 
-            NetworkManager.Instance.LinkMethod(method, NetObject.objectHash);
+            NetworkManager.Instance.LinkMethod(method, NetObject.objectHash, immediatelyCall);
 
         }
 

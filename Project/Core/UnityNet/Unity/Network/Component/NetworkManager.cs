@@ -45,7 +45,7 @@ namespace UnityNet
             }
 
         }
-        public void Connected()
+        public void Connect()
         {
 
             IPHostEntry iphost = Dns.GetHostEntry(Dns.GetHostName());
@@ -115,10 +115,17 @@ namespace UnityNet
 
         }
 
-        public void LinkMethod(Action mehod, int senderHash)
+        public void LinkMethod(Action method, int senderHash, bool immediatelyCall = false)
         {
 
-            var packet = new MethodLinkPacket(senderHash, mehod.Method.Name, mehod.Target.GetType().Name);
+            if (immediatelyCall)
+            {
+
+                method.Invoke();
+
+            }
+
+            var packet = new MethodLinkPacket(senderHash, method.Method.Name, method.Target.GetType().Name, immediatelyCall);
             session.Send(packet.Write());
 
         }

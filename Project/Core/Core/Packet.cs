@@ -202,12 +202,14 @@ namespace Core
         public int objectHash;
         public string methodName;
         public string componentName;
+        public bool immediatelyCalled;
 
-        public MethodLinkPacket(int objectHash, string methodName, string componentName)
+        public MethodLinkPacket(int objectHash, string methodName, string componentName, bool immediatelyCalled)
         {
             this.objectHash = objectHash;
             this.methodName = methodName;
             this.componentName = componentName;
+            this.immediatelyCalled = immediatelyCalled;
         }
 
         public MethodLinkPacket() { }
@@ -221,6 +223,7 @@ namespace Core
             Serializer.Deserialize(ref objectHash, ref segment, ref count);
             Serializer.Deserialize(ref methodName, ref segment, ref count);
             Serializer.Deserialize(ref componentName, ref segment, ref count);
+            Serializer.Deserialize(ref immediatelyCalled, ref segment, ref count);
 
         }
 
@@ -234,6 +237,7 @@ namespace Core
             objectHash.Serialize(ref segment, ref count);
             methodName.Serialize(ref segment, ref count);
             componentName.Serialize(ref segment, ref count);
+            immediatelyCalled.Serialize(ref segment, ref count);
 
             count.Serialize(ref segment);
 
