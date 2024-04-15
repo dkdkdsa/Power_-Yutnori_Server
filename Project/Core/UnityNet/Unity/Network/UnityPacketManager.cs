@@ -17,9 +17,11 @@ namespace UnityNet
 
             makeFunc.Add((ushort)PacketType.NetPrefabSpawneing, MakePacket<NetPrefabSpawneingPacket>);
             makeFunc.Add((ushort)PacketType.GameEnterPacket, MakePacket<GameEnterPacket>);
+            makeFunc.Add((ushort)PacketType.MethodLinkPacket, MakePacket<MethodLinkPacket>);
 
             handler.Add((ushort)PacketType.NetPrefabSpawneing, NetPrefabHandle);
             handler.Add((ushort)PacketType.GameEnterPacket, GameEnterHandle);
+            handler.Add((ushort)PacketType.MethodLinkPacket, LinkMethodHandle);
 
         }
 
@@ -44,6 +46,15 @@ namespace UnityNet
                 NetworkManager.Instance.SyncNetObject(item.prefabName, item.position, item.rotaitoin, item.hash);
 
             }
+
+        }
+
+        private void LinkMethodHandle(PacketSession session, IPacket packet)
+        {
+
+            var p = packet as MethodLinkPacket;
+
+            NetworkManager.Instance.LinkMethodInvoke(p.methodName, p.componentName, p.objectHash);
 
         }
 

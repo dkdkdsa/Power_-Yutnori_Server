@@ -39,14 +39,13 @@ namespace Server
         {
             lock (handler)
             {
-                // 플레이어 제거하고
-                sessions.Remove(session);
 
+                sessions.Remove(session);
 
             }
         }
 
-        public void BroadCast(ArraySegment<byte> segment, int clientId)
+        public void BroadCast(ArraySegment<byte> segment, int clientId = -1)
         {
             ArraySegment<byte> packet = segment;
 
@@ -55,9 +54,15 @@ namespace Server
                 foreach (ClientSession s in sessions)
                 {
 
-                    if (s.SessionId == clientId) continue;
+                    if(clientId != -1)
+                    {
 
-                    s.Send(segment);    // 리스트에 들어있는 모든 클라에 전송
+                        if (s.SessionId == clientId) continue;
+
+                    }
+
+                    s.Send(segment);
+
                 }
             }
         }

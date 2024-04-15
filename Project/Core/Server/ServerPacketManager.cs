@@ -16,9 +16,10 @@ namespace Server
         {
 
             makeFunc.Add((ushort)PacketType.NetPrefabSpawneing, MakePacket<NetPrefabSpawneingPacket>);
+            makeFunc.Add((ushort)PacketType.MethodLinkPacket, MakePacket<MethodLinkPacket>);
+
             handler.Add((ushort)PacketType.NetPrefabSpawneing, PrefabSpawnHandle);
-            //makeFunc.Add((ushort)PacketType.None, MakePacket<DebugPacket>);
-            //handler.Add((ushort)PacketType.None, PacketHandler.DebugHandler);
+            handler.Add((ushort)PacketType.MethodLinkPacket, MethodLinkHandle);
 
         }
 
@@ -41,6 +42,13 @@ namespace Server
             };
 
             Program.Room.AddObjectData(data);
+
+        }
+
+        public static void MethodLinkHandle(PacketSession session, IPacket packet)
+        {
+
+            Program.Room.BroadCast(packet.Write());
 
         }
 

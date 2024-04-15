@@ -17,6 +17,7 @@ namespace UnityNet
         [Header("Prefab")]
         [SerializeField] private NetworkPrefabs prefabs;
 
+        private Dictionary<int, NetObject> netObjectContainer = new Dictionary<int, NetObject>();
         private UnitySession session;
 
         public int ClientId { get; private set; }
@@ -80,6 +81,8 @@ namespace UnityNet
             var obj = Instantiate(prefab, pos, rot);
             obj.Spawn(hash);
 
+            netObjectContainer.Add(hash, obj);
+
             return obj;
 
         }
@@ -94,11 +97,12 @@ namespace UnityNet
 
                 Debug.LogError($"{prefabName}이라는 이름의 NetPrefab이 존재하지 않습니다!");
 
-
             }
 
             var obj = Instantiate(prefab, pos, rot);
             obj.Spawn(hash);
+
+            netObjectContainer.Add(hash, obj);
 
         }
 
@@ -108,6 +112,41 @@ namespace UnityNet
             if (clientId != 0) return;
 
             ClientId = clientId;
+
+        }
+
+        public void LinkMethod(Action mehod, int senderHash)
+        {
+
+            var packet = new MethodLinkPacket(senderHash, mehod.Method.Name, mehod.Target.GetType().Name);
+            session.Send(packet.Write());
+
+        }
+
+        public void LinkMethodInvoke(string method, string componentName, int hash) 
+        {
+            
+            if(netObjectContainer.TryGetValue(hash, out var obj))
+            {
+
+                var compo = obj.GetComponent(componentName) as NetBehavior;
+
+                if(compo == null)
+                {
+
+                    Debug.LogWarning($"컴포넌트가 누락되었습니다 이름 : {componentName}");
+
+                }
+
+                compo.Invoke(method, 0);
+
+            }
+            else
+            {
+
+                Debug.LogWarning($"해시값이 누락되었습니다 값 : {hash}");
+
+            }
 
         }
 

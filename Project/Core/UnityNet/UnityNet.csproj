@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Unity\Network\Component\NetBehavior.cs" />
     <Compile Include="Unity\Network\Component\NetObject.cs" />
     <Compile Include="Unity\Network\Component\NetworkManager.cs" />
     <Compile Include="Unity\Network\PacketQueue.cs" />

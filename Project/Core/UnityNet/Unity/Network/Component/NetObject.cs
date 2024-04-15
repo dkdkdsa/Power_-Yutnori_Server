@@ -3,6 +3,8 @@ using UnityEngine;
 
 namespace UnityNet
 {
+
+    [DisallowMultipleComponent]
     public class NetObject : MonoBehaviour
     {
 

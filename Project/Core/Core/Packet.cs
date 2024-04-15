@@ -16,7 +16,9 @@ namespace Core
         None,
         NetPrefabSpawneing,
         GameEnterPacket,
-        ClientJoinPacket
+        ClientJoinPacket,
+        MethodLinkPacket
+
 
     }
 
@@ -169,7 +171,6 @@ namespace Core
         public void Read(ArraySegment<byte> segment)
         {
 
-
             ushort count = sizeof(ushort);
             count += sizeof(ushort);
 
@@ -187,6 +188,54 @@ namespace Core
             clientId.Serialize(ref segment, ref count);
 
             Serializer.Serialize(count, ref segment);
+
+            return SendBufferHelper.Close(count);
+
+        }
+
+    }
+
+    public class MethodLinkPacket : IPacket
+    {
+        public ushort Protocol => (ushort)PacketType.MethodLinkPacket;
+
+        public int objectHash;
+        public string methodName;
+        public string componentName;
+
+        public MethodLinkPacket(int objectHash, string methodName, string componentName)
+        {
+            this.objectHash = objectHash;
+            this.methodName = methodName;
+            this.componentName = componentName;
+        }
+
+        public MethodLinkPacket() { }
+
+        public void Read(ArraySegment<byte> segment)
+        {
+
+            ushort count = sizeof(ushort);
+            count += sizeof(ushort);
+
+            Serializer.Deserialize(ref objectHash, ref segment, ref count);
+            Serializer.Deserialize(ref methodName, ref segment, ref count);
+            Serializer.Deserialize(ref componentName, ref segment, ref count);
+
+        }
+
+        public ArraySegment<byte> Write()
+        {
+
+            ArraySegment<byte> segment = SendBufferHelper.Open(4096);
+            ushort count = sizeof(ushort);
+
+            Protocol.Serialize(ref segment, ref count);
+            objectHash.Serialize(ref segment, ref count);
+            methodName.Serialize(ref segment, ref count);
+            componentName.Serialize(ref segment, ref count);
+
+            count.Serialize(ref segment);
 
             return SendBufferHelper.Close(count);
 
