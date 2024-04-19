@@ -20,7 +20,8 @@ namespace Core
         ClientJoinPacket,
         MethodLinkPacket,
         MethodLinkParamPacket,
-        TransformLinkPacket
+        TransformLinkPacket,
+        DespawnObjectPacket
 
     }
 
@@ -348,6 +349,40 @@ namespace Core
 
             Protocol.Serialize(ref segment, ref count);
             position.Serialize(ref segment, ref count);
+            objectHash.Serialize(ref segment, ref count);
+
+            count.Serialize(ref segment);
+
+            return SendBufferHelper.Close(count);
+
+        }
+
+    }
+
+    public class DespawnObjectPacket : IPacket
+    {
+
+        public ushort Protocol => (ushort)PacketType.DespawnObjectPacket;
+
+        public int objectHash;
+
+        public void Read(ArraySegment<byte> segment)
+        {
+
+            ushort count = sizeof(ushort);
+            count += sizeof(ushort);
+
+            Serializer.Deserialize(ref objectHash, ref segment, ref count);
+
+        }
+
+        public ArraySegment<byte> Write()
+        {
+
+            ArraySegment<byte> segment = SendBufferHelper.Open(4096);
+            ushort count = sizeof(ushort);
+
+            Protocol.Serialize(ref segment, ref count);
             objectHash.Serialize(ref segment, ref count);
 
             count.Serialize(ref segment);

@@ -69,5 +69,14 @@ namespace Server
 
         }
 
+        public void RemoveObjectData(int objectHash)
+        {
+
+            var x = datas.Find(x => x.hash == objectHash);
+
+            datas.Remove(x);
+
+        }
+
     }
 }

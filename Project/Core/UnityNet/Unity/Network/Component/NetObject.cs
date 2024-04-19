@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Core;
+using System;
 using UnityEngine;
 
 namespace UnityNet
@@ -22,6 +23,17 @@ namespace UnityNet
 
         }
         
+        public void Despawn()
+        {
+
+            Destroy(gameObject);
+
+            var p = new DespawnObjectPacket();
+            p.objectHash = Hash;
+
+            NetworkManager.Instance.SendPacket(p);
+
+        }
 
     }
 

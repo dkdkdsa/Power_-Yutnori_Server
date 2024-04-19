@@ -232,6 +232,8 @@ namespace UnityNet
         public void SendPacket(IPacket packet)
         {
 
+            if (!IsConnected) return;
+
             session.Send(packet.Write());
 
         }

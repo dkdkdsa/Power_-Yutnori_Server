@@ -19,11 +19,23 @@ namespace Server
             makeFunc.Add((ushort)PacketType.MethodLinkPacket, MakePacket<MethodLinkPacket>);
             makeFunc.Add((ushort)PacketType.MethodLinkParamPacket, MakePacket<MethodLinkPacketParam>);
             makeFunc.Add((ushort)PacketType.TransformLinkPacket, MakePacket<TransformLinkPacket>);
+            makeFunc.Add((ushort)PacketType.DespawnObjectPacket, MakePacket<DespawnObjectPacket>);
 
             handler.Add((ushort)PacketType.NetPrefabSpawneing, PrefabSpawnHandle);
             handler.Add((ushort)PacketType.MethodLinkPacket, MethodLinkHandle);
             handler.Add((ushort)PacketType.MethodLinkParamPacket, MethodLinkParamHandle);
             handler.Add((ushort)PacketType.TransformLinkPacket, BroadCastNotSendClient);
+            handler.Add((ushort)PacketType.DespawnObjectPacket, DespawnObjectHandle);
+
+        }
+
+        private void DespawnObjectHandle(PacketSession session, IPacket packet)
+        {
+
+            var p = packet as DespawnObjectPacket;
+            Program.Room.RemoveObjectData(p.objectHash);
+
+            BroadCastNotSendClient(session, p);
 
         }
 
