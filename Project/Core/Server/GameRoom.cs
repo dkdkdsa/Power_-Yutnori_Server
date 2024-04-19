@@ -23,13 +23,8 @@ namespace Server
                 sessions.Add(session);
                 session.Room = this;
 
-                if(datas.Count > 0 )
-                {
-
-                    var enterPacket = new GameEnterPacket(datas, session.SessionId);
-                    session.Send(enterPacket.Write());
-
-                }
+                var enterPacket = new GameEnterPacket(datas, session.SessionId);
+                session.Send(enterPacket.Write());
 
             }
 

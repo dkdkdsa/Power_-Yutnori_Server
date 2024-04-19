@@ -21,11 +21,13 @@ namespace UnityNet
             makeFunc.Add((ushort)PacketType.GameEnterPacket, MakePacket<GameEnterPacket>);
             makeFunc.Add((ushort)PacketType.MethodLinkPacket, MakePacket<MethodLinkPacket>);
             makeFunc.Add((ushort)PacketType.MethodLinkParamPacket, MakePacket<MethodLinkPacketParam>);
+            makeFunc.Add((ushort)PacketType.TransformLinkPacket, MakePacket<TransformLinkPacket>);
 
             handler.Add((ushort)PacketType.NetPrefabSpawneing, NetPrefabHandle);
             handler.Add((ushort)PacketType.GameEnterPacket, GameEnterHandle);
             handler.Add((ushort)PacketType.MethodLinkPacket, LinkMethodHandle);
             handler.Add((ushort)PacketType.MethodLinkParamPacket, LinkMethodParamHandle);
+            handler.Add((ushort)PacketType.TransformLinkPacket, LinkTransformHandle);
 
         }
 
@@ -33,7 +35,7 @@ namespace UnityNet
         {
 
             var prefabPacket = packet as NetPrefabSpawneingPacket;
-            NetworkManager.Instance.SyncNetObject(prefabPacket.prefabName, prefabPacket.position, prefabPacket.rotation, prefabPacket.hash);
+            NetworkManager.Instance.SyncNetObject(prefabPacket.prefabName, prefabPacket.position, prefabPacket.rotation, prefabPacket.hash, prefabPacket.ownerId);
 
         }
 
@@ -47,7 +49,7 @@ namespace UnityNet
             foreach(var item in prefabPacket.datas)
             {
 
-                NetworkManager.Instance.SyncNetObject(item.prefabName, item.position, item.rotaitoin, item.hash);
+                NetworkManager.Instance.SyncNetObject(item.prefabName, item.position, item.rotaitoin, item.hash, item.ownerId);
 
             }
 
@@ -72,6 +74,15 @@ namespace UnityNet
 
         }
 
+        public static void LinkTransformHandle(PacketSession session, IPacket packet)
+        {
+
+            var p = packet as TransformLinkPacket;
+
+            var trm = NetworkManager.Instance.FindNetObject(p.objectHash).GetComponent<NetTransform>();
+            trm.Sync(p.position);
+
+        }
 
     }
 

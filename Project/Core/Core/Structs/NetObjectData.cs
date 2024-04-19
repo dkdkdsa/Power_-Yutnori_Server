@@ -14,6 +14,7 @@ namespace Core
         public Vector3 position;
         public Quaternion rotaitoin;
         public string prefabName;
+        public int ownerId;
 
         public void Serialize(ref ArraySegment<byte> buffer, ref ushort count)
         {
@@ -22,6 +23,7 @@ namespace Core
             position.Serialize(ref buffer, ref count);
             rotaitoin.Serialize(ref buffer, ref count);
             prefabName.Serialize(ref buffer, ref count);
+            ownerId.Serialize(ref buffer, ref count);
 
         }
 
@@ -32,6 +34,7 @@ namespace Core
             Serializer.Deserialize(ref position, ref buffer, ref count);
             Serializer.Deserialize(ref rotaitoin, ref buffer,ref count);
             Serializer.Deserialize(ref prefabName, ref buffer, ref count);
+            Serializer.Deserialize(ref ownerId, ref buffer, ref count);
 
         }
 

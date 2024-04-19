@@ -100,7 +100,7 @@ namespace UnityNet
             }
 
             var obj = Instantiate(prefab, pos, rot);
-            obj.Spawn(hash, -1);
+            obj.Spawn(hash, ownerClientId);
 
             netObjectContainer.Add(hash, obj);
 
@@ -109,14 +109,30 @@ namespace UnityNet
         public void SetClientId(int clientId)
         {
 
-            if (clientId != 0) return;
-
+            Debug.Log(clientId);
             ClientId = clientId;
+
+        }
+
+        public NetObject FindNetObject(int hash)
+        {
+
+            return netObjectContainer[hash];
 
         }
 
         public void LinkMethod(Action method, int senderHash, bool immediatelyCall = false)
         {
+
+            var netobj = netObjectContainer[senderHash];
+
+            if (netobj.IsHaveOwner == true && netobj.OwnerCliendId != ClientId)
+            {
+
+                Debug.LogWarning($"이 클라이언트는 {netobj.name}의 Owner가 아닙니다 Owner만 매서드를 동기화 할 수 있습니다");
+                return;
+
+            }
 
             if (immediatelyCall)
             {
@@ -132,6 +148,16 @@ namespace UnityNet
 
         public void LinkMethod<T>(Action<T> method, int senderHash, T param, bool immediatelyCall = false) where T : INetSerializeable
         {
+
+            var netobj = netObjectContainer[senderHash];
+
+            if (netobj.IsHaveOwner == true && netobj.OwnerCliendId != ClientId)
+            {
+
+                Debug.LogWarning($"이 클라이언트는 {netobj.name}의 Owner가 아닙니다 Owner만 매서드를 동기화 할 수 있습니다");
+                return;
+
+            }
 
             if (immediatelyCall)
             {
@@ -200,6 +226,13 @@ namespace UnityNet
                 Debug.LogWarning($"해시값이 누락되었습니다 값 : {hash}");
 
             }
+
+        }
+
+        public void SendPacket(IPacket packet)
+        {
+
+            session.Send(packet.Write());
 
         }
 

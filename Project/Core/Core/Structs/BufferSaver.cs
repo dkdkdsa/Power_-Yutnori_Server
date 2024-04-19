@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Core
 {
+    /// <summary>
+    /// 매계변수 동기화에 사용되는 버퍼 저장기
+    /// </summary>
     public struct BufferSaver : INetSerializeable
     {
 

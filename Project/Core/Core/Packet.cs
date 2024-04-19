@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
@@ -18,7 +19,8 @@ namespace Core
         GameEnterPacket,
         ClientJoinPacket,
         MethodLinkPacket,
-        MethodLinkParamPacket
+        MethodLinkParamPacket,
+        TransformLinkPacket
 
     }
 
@@ -310,6 +312,43 @@ namespace Core
             immediatelyCalled.Serialize(ref segment, ref count);
             typeName.Serialize(ref segment, ref count);
             saver.Serialize(ref segment, ref count);
+
+            count.Serialize(ref segment);
+
+            return SendBufferHelper.Close(count);
+
+        }
+
+    }
+
+    public class TransformLinkPacket : IPacket
+    {
+
+        public ushort Protocol => (ushort)PacketType.TransformLinkPacket;
+
+        public Vector3 position;
+        public int objectHash;
+
+        public void Read(ArraySegment<byte> segment)
+        {
+
+            ushort count = sizeof(ushort);
+            count += sizeof(ushort);
+
+            Serializer.Deserialize(ref position, ref segment, ref count);
+            Serializer.Deserialize(ref objectHash, ref segment, ref count);
+
+        }
+
+        public ArraySegment<byte> Write()
+        {
+
+            ArraySegment<byte> segment = SendBufferHelper.Open(4096);
+            ushort count = sizeof(ushort);
+
+            Protocol.Serialize(ref segment, ref count);
+            position.Serialize(ref segment, ref count);
+            objectHash.Serialize(ref segment, ref count);
 
             count.Serialize(ref segment);
 

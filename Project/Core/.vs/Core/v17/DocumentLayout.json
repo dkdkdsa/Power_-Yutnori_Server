@@ -3,15 +3,71 @@
   "WorkspaceRootPath": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{777696BB-83F1-4054-95F6-FEFABDCEB880}|UnityNet\\UnityNet.csproj|d:\\unitypj\\power_-yutnori_server\\project\\core\\unitynet\\unity\\network\\component\\nettransform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{777696BB-83F1-4054-95F6-FEFABDCEB880}|UnityNet\\UnityNet.csproj|solutionrelative:unitynet\\unity\\network\\component\\nettransform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{777696BB-83F1-4054-95F6-FEFABDCEB880}|UnityNet\\UnityNet.csproj|D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\unitynet\\unity\\network\\component\\netbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{777696BB-83F1-4054-95F6-FEFABDCEB880}|UnityNet\\UnityNet.csproj|solutionrelative:unitynet\\unity\\network\\component\\netbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{777696BB-83F1-4054-95F6-FEFABDCEB880}|UnityNet\\UnityNet.csproj|D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\unitynet\\unity\\network\\component\\netobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{777696BB-83F1-4054-95F6-FEFABDCEB880}|UnityNet\\UnityNet.csproj|solutionrelative:unitynet\\unity\\network\\component\\netobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{408821D5-8C15-41D2-8390-084BC377FD73}|Core\\Core.csproj|D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\core\\packet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{408821D5-8C15-41D2-8390-084BC377FD73}|Core\\Core.csproj|solutionrelative:core\\packet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{777696BB-83F1-4054-95F6-FEFABDCEB880}|UnityNet\\UnityNet.csproj|d:\\unitypj\\power_-yutnori_server\\project\\core\\unitynet\\unity\\network\\unitypacketmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{777696BB-83F1-4054-95F6-FEFABDCEB880}|UnityNet\\UnityNet.csproj|solutionrelative:unitynet\\unity\\network\\unitypacketmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{777696BB-83F1-4054-95F6-FEFABDCEB880}|UnityNet\\UnityNet.csproj|D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\unitynet\\unity\\network\\component\\networkmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{777696BB-83F1-4054-95F6-FEFABDCEB880}|UnityNet\\UnityNet.csproj|solutionrelative:unitynet\\unity\\network\\component\\networkmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{408821D5-8C15-41D2-8390-084BC377FD73}|Core\\Core.csproj|d:\\unitypj\\power_-yutnori_server\\project\\core\\core\\packet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{408821D5-8C15-41D2-8390-084BC377FD73}|Core\\Core.csproj|solutionrelative:core\\packet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D1C20C2D-5EE4-4AD0-9D30-9B5DD1ED216E}|Server\\Server.csproj|D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\server\\serverpacketmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1C20C2D-5EE4-4AD0-9D30-9B5DD1ED216E}|Server\\Server.csproj|solutionrelative:server\\serverpacketmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{408821D5-8C15-41D2-8390-084BC377FD73}|Core\\Core.csproj|d:\\unitypj\\power_-yutnori_server\\project\\core\\core\\structs\\buffersaver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{777696BB-83F1-4054-95F6-FEFABDCEB880}|UnityNet\\UnityNet.csproj|D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\unitynet\\unity\\network\\packetqueue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{777696BB-83F1-4054-95F6-FEFABDCEB880}|UnityNet\\UnityNet.csproj|solutionrelative:unitynet\\unity\\network\\packetqueue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{777696BB-83F1-4054-95F6-FEFABDCEB880}|UnityNet\\UnityNet.csproj|D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\unitynet\\unity\\network\\event\\localnetworkevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{777696BB-83F1-4054-95F6-FEFABDCEB880}|UnityNet\\UnityNet.csproj|solutionrelative:unitynet\\unity\\network\\event\\localnetworkevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1C20C2D-5EE4-4AD0-9D30-9B5DD1ED216E}|Server\\Server.csproj|D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1C20C2D-5EE4-4AD0-9D30-9B5DD1ED216E}|Server\\Server.csproj|solutionrelative:server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1C20C2D-5EE4-4AD0-9D30-9B5DD1ED216E}|Server\\Server.csproj|D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\server\\gameroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1C20C2D-5EE4-4AD0-9D30-9B5DD1ED216E}|Server\\Server.csproj|solutionrelative:server\\gameroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1C20C2D-5EE4-4AD0-9D30-9B5DD1ED216E}|Server\\Server.csproj|D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\server\\clientsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1C20C2D-5EE4-4AD0-9D30-9B5DD1ED216E}|Server\\Server.csproj|solutionrelative:server\\clientsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1C20C2D-5EE4-4AD0-9D30-9B5DD1ED216E}|Server\\Server.csproj|D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\server\\sessionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1C20C2D-5EE4-4AD0-9D30-9B5DD1ED216E}|Server\\Server.csproj|solutionrelative:server\\sessionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{408821D5-8C15-41D2-8390-084BC377FD73}|Core\\Core.csproj|D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\core\\structs\\netobjectdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{408821D5-8C15-41D2-8390-084BC377FD73}|Core\\Core.csproj|solutionrelative:core\\structs\\netobjectdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{408821D5-8C15-41D2-8390-084BC377FD73}|Core\\Core.csproj|D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\core\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{408821D5-8C15-41D2-8390-084BC377FD73}|Core\\Core.csproj|solutionrelative:core\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B83B928C-DBF9-48E0-8A61-6B3DDCA4D384}|DebugClient\\DebugClient.csproj|D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\debugclient\\debugclient.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B83B928C-DBF9-48E0-8A61-6B3DDCA4D384}|DebugClient\\DebugClient.csproj|solutionrelative:debugclient\\debugclient.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{408821D5-8C15-41D2-8390-084BC377FD73}|Core\\Core.csproj|D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\core\\structs\\buffersaver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{408821D5-8C15-41D2-8390-084BC377FD73}|Core\\Core.csproj|solutionrelative:core\\structs\\buffersaver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -31,64 +87,20 @@
       "RelativeMoniker": "D:0:0:{B83B928C-DBF9-48E0-8A61-6B3DDCA4D384}|DebugClient\\DebugClient.csproj|solutionrelative:debugclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1C20C2D-5EE4-4AD0-9D30-9B5DD1ED216E}|Server\\Server.csproj|D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\server\\gameroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1C20C2D-5EE4-4AD0-9D30-9B5DD1ED216E}|Server\\Server.csproj|solutionrelative:server\\gameroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{777696BB-83F1-4054-95F6-FEFABDCEB880}|UnityNet\\UnityNet.csproj|D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\unitynet\\unity\\network\\unitypacketmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{777696BB-83F1-4054-95F6-FEFABDCEB880}|UnityNet\\UnityNet.csproj|solutionrelative:unitynet\\unity\\network\\unitypacketmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{777696BB-83F1-4054-95F6-FEFABDCEB880}|UnityNet\\UnityNet.csproj|d:\\unitypj\\power_-yutnori_server\\project\\core\\unitynet\\unity\\network\\event\\localnetworkevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{777696BB-83F1-4054-95F6-FEFABDCEB880}|UnityNet\\UnityNet.csproj|solutionrelative:unitynet\\unity\\network\\event\\localnetworkevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{777696BB-83F1-4054-95F6-FEFABDCEB880}|UnityNet\\UnityNet.csproj|D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\unitynet\\unity\\network\\unitysession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{777696BB-83F1-4054-95F6-FEFABDCEB880}|UnityNet\\UnityNet.csproj|solutionrelative:unitynet\\unity\\network\\unitysession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1C20C2D-5EE4-4AD0-9D30-9B5DD1ED216E}|Server\\Server.csproj|D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\server\\sessionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1C20C2D-5EE4-4AD0-9D30-9B5DD1ED216E}|Server\\Server.csproj|solutionrelative:server\\sessionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1C20C2D-5EE4-4AD0-9D30-9B5DD1ED216E}|Server\\Server.csproj|D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\server\\serverpacketmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1C20C2D-5EE4-4AD0-9D30-9B5DD1ED216E}|Server\\Server.csproj|solutionrelative:server\\serverpacketmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{408821D5-8C15-41D2-8390-084BC377FD73}|Core\\Core.csproj|D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\core\\inetserializeable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{408821D5-8C15-41D2-8390-084BC377FD73}|Core\\Core.csproj|solutionrelative:core\\inetserializeable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{408821D5-8C15-41D2-8390-084BC377FD73}|Core\\Core.csproj|d:\\unitypj\\power_-yutnori_server\\project\\core\\core\\structs\\netobjectdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{408821D5-8C15-41D2-8390-084BC377FD73}|Core\\Core.csproj|solutionrelative:core\\structs\\netobjectdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{408821D5-8C15-41D2-8390-084BC377FD73}|Core\\Core.csproj|D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\core\\listener.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{408821D5-8C15-41D2-8390-084BC377FD73}|Core\\Core.csproj|solutionrelative:core\\listener.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1C20C2D-5EE4-4AD0-9D30-9B5DD1ED216E}|Server\\Server.csproj|D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\server\\clientsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1C20C2D-5EE4-4AD0-9D30-9B5DD1ED216E}|Server\\Server.csproj|solutionrelative:server\\clientsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{408821D5-8C15-41D2-8390-084BC377FD73}|Core\\Core.csproj|D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\core\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{408821D5-8C15-41D2-8390-084BC377FD73}|Core\\Core.csproj|solutionrelative:core\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{408821D5-8C15-41D2-8390-084BC377FD73}|Core\\Core.csproj|D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\core\\packetmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{408821D5-8C15-41D2-8390-084BC377FD73}|Core\\Core.csproj|solutionrelative:core\\packetmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{777696BB-83F1-4054-95F6-FEFABDCEB880}|UnityNet\\UnityNet.csproj|d:\\unitypj\\power_-yutnori_server\\project\\core\\unitynet\\unity\\network\\component\\netbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{777696BB-83F1-4054-95F6-FEFABDCEB880}|UnityNet\\UnityNet.csproj|solutionrelative:unitynet\\unity\\network\\component\\netbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{777696BB-83F1-4054-95F6-FEFABDCEB880}|UnityNet\\UnityNet.csproj|D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\unitynet\\unity\\network\\component\\netobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{777696BB-83F1-4054-95F6-FEFABDCEB880}|UnityNet\\UnityNet.csproj|solutionrelative:unitynet\\unity\\network\\component\\netobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{777696BB-83F1-4054-95F6-FEFABDCEB880}|UnityNet\\UnityNet.csproj|D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\unitynet\\unity\\network\\packetqueue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{777696BB-83F1-4054-95F6-FEFABDCEB880}|UnityNet\\UnityNet.csproj|solutionrelative:unitynet\\unity\\network\\packetqueue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{777696BB-83F1-4054-95F6-FEFABDCEB880}|UnityNet\\UnityNet.csproj|D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\unitynet\\unity\\so\\networkprefabs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -101,14 +113,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{408821D5-8C15-41D2-8390-084BC377FD73}|Core\\Core.csproj|D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\core\\connector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{408821D5-8C15-41D2-8390-084BC377FD73}|Core\\Core.csproj|solutionrelative:core\\connector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B83B928C-DBF9-48E0-8A61-6B3DDCA4D384}|DebugClient\\DebugClient.csproj|D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\debugclient\\debugclient.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{B83B928C-DBF9-48E0-8A61-6B3DDCA4D384}|DebugClient\\DebugClient.csproj|solutionrelative:debugclient\\debugclient.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1C20C2D-5EE4-4AD0-9D30-9B5DD1ED216E}|Server\\Server.csproj|D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1C20C2D-5EE4-4AD0-9D30-9B5DD1ED216E}|Server\\Server.csproj|solutionrelative:server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -118,7 +122,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -129,246 +133,34 @@
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\DebugClient\\Program.cs",
-              "RelativeDocumentMoniker": "DebugClient\\Program.cs",
-              "ToolTip": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\DebugClient\\Program.cs",
-              "RelativeToolTip": "DebugClient\\Program.cs",
-              "ViewState": "AQIAACYAAAAAAAAAAAAowDcAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "NetObject.cs",
+              "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\UnityNet\\Unity\\Network\\Component\\NetObject.cs",
+              "RelativeDocumentMoniker": "UnityNet\\Unity\\Network\\Component\\NetObject.cs",
+              "ToolTip": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\UnityNet\\Unity\\Network\\Component\\NetObject.cs",
+              "RelativeToolTip": "UnityNet\\Unity\\Network\\Component\\NetObject.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T11:23:57.737Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UnitySession.cs",
-              "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\UnityNet\\Unity\\Network\\UnitySession.cs",
-              "RelativeDocumentMoniker": "UnityNet\\Unity\\Network\\UnitySession.cs",
-              "ToolTip": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\UnityNet\\Unity\\Network\\UnitySession.cs",
-              "RelativeToolTip": "UnityNet\\Unity\\Network\\UnitySession.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAgwCwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T12:07:27.525Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "NetworkManager.cs",
-              "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\UnityNet\\Unity\\Network\\Component\\NetworkManager.cs",
-              "RelativeDocumentMoniker": "UnityNet\\Unity\\Network\\Component\\NetworkManager.cs",
-              "ToolTip": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\UnityNet\\Unity\\Network\\Component\\NetworkManager.cs",
-              "RelativeToolTip": "UnityNet\\Unity\\Network\\Component\\NetworkManager.cs",
-              "ViewState": "AQIAALMAAAAAAAAAAAAAAMEAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T09:53:58.058Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RecvBuffer.cs",
-              "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Core\\RecvBuffer.cs",
-              "RelativeDocumentMoniker": "Core\\RecvBuffer.cs",
-              "ToolTip": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Core\\RecvBuffer.cs",
-              "RelativeToolTip": "Core\\RecvBuffer.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAawBkAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T03:44:46.373Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SendBuffer.cs",
-              "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Core\\SendBuffer.cs",
-              "RelativeDocumentMoniker": "Core\\SendBuffer.cs",
-              "ToolTip": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Core\\SendBuffer.cs",
-              "RelativeToolTip": "Core\\SendBuffer.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAcwAgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T03:46:30.4Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Serializer.cs",
-              "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Core\\Serializer.cs",
-              "RelativeDocumentMoniker": "Core\\Serializer.cs",
-              "ToolTip": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Core\\Serializer.cs",
-              "RelativeToolTip": "Core\\Serializer.cs",
-              "ViewState": "AQIAADYAAAAAAAAAAIAwwDoAAABrAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T10:07:25.243Z",
+              "WhenOpened": "2024-04-13T09:53:31.461Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Packet.cs",
-              "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Core\\Packet.cs",
-              "RelativeDocumentMoniker": "Core\\Packet.cs",
-              "ToolTip": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Core\\Packet.cs",
-              "RelativeToolTip": "Core\\Packet.cs",
-              "ViewState": "AQIAACsBAAAAAAAAAIAwwDUBAAAMAAAA",
+              "Title": "NetBehavior.cs",
+              "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\UnityNet\\Unity\\Network\\Component\\NetBehavior.cs",
+              "RelativeDocumentMoniker": "UnityNet\\Unity\\Network\\Component\\NetBehavior.cs",
+              "ToolTip": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\UnityNet\\Unity\\Network\\Component\\NetBehavior.cs",
+              "RelativeToolTip": "UnityNet\\Unity\\Network\\Component\\NetBehavior.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAiwCIAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T15:16:56.812Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BufferSaver.cs",
-              "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Core\\Structs\\BufferSaver.cs",
-              "RelativeDocumentMoniker": "Core\\Structs\\BufferSaver.cs",
-              "ToolTip": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Core\\Structs\\BufferSaver.cs",
-              "RelativeToolTip": "Core\\Structs\\BufferSaver.cs",
-              "ViewState": "AQIAACYAAAAAAAAAAAAEwBoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T02:32:31.958Z",
+              "WhenOpened": "2024-04-14T23:49:15.513Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "GameRoom.cs",
-              "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Server\\GameRoom.cs",
-              "RelativeDocumentMoniker": "Server\\GameRoom.cs",
-              "ToolTip": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Server\\GameRoom.cs",
-              "RelativeToolTip": "Server\\GameRoom.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAcwCsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T11:25:22.966Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UnityPacketManager.cs",
-              "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\UnityNet\\Unity\\Network\\UnityPacketManager.cs",
-              "RelativeDocumentMoniker": "UnityNet\\Unity\\Network\\UnityPacketManager.cs",
-              "ToolTip": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\UnityNet\\Unity\\Network\\UnityPacketManager.cs",
-              "RelativeToolTip": "UnityNet\\Unity\\Network\\UnityPacketManager.cs",
-              "ViewState": "AQIAADkAAAAAAAAAAAAAwEUAAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T09:58:55.756Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "LocalNetworkEvent.cs",
-              "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\UnityNet\\Unity\\Network\\Event\\LocalNetworkEvent.cs",
-              "RelativeDocumentMoniker": "UnityNet\\Unity\\Network\\Event\\LocalNetworkEvent.cs",
-              "ToolTip": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\UnityNet\\Unity\\Network\\Event\\LocalNetworkEvent.cs",
-              "RelativeToolTip": "UnityNet\\Unity\\Network\\Event\\LocalNetworkEvent.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T03:13:27.536Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "SessionManager.cs",
-              "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Server\\SessionManager.cs",
-              "RelativeDocumentMoniker": "Server\\SessionManager.cs",
-              "ToolTip": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Server\\SessionManager.cs",
-              "RelativeToolTip": "Server\\SessionManager.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAYwAgAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T11:27:15.51Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ServerPacketManager.cs",
-              "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Server\\ServerPacketManager.cs",
-              "RelativeDocumentMoniker": "Server\\ServerPacketManager.cs",
-              "ToolTip": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Server\\ServerPacketManager.cs",
-              "RelativeToolTip": "Server\\ServerPacketManager.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAvwBMAAABWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T11:28:45.76Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "INetSerializeable.cs",
-              "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Core\\INetSerializeable.cs",
-              "RelativeDocumentMoniker": "Core\\INetSerializeable.cs",
-              "ToolTip": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Core\\INetSerializeable.cs",
-              "RelativeToolTip": "Core\\INetSerializeable.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAswAwAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T04:51:34.678Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "NetObjectData.cs",
-              "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Core\\Structs\\NetObjectData.cs",
-              "RelativeDocumentMoniker": "Core\\Structs\\NetObjectData.cs",
-              "ToolTip": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Core\\Structs\\NetObjectData.cs",
-              "RelativeToolTip": "Core\\Structs\\NetObjectData.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAkAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T01:41:42.865Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ClientSession.cs",
-              "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Server\\ClientSession.cs",
-              "RelativeDocumentMoniker": "Server\\ClientSession.cs",
-              "ToolTip": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Server\\ClientSession.cs",
-              "RelativeToolTip": "Server\\ClientSession.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAIAwwCUAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T11:24:22.645Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "PacketManager.cs",
-              "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Core\\PacketManager.cs",
-              "RelativeDocumentMoniker": "Core\\PacketManager.cs",
-              "ToolTip": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Core\\PacketManager.cs",
-              "RelativeToolTip": "Core\\PacketManager.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAIAwwCoAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T09:56:34.041Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Listener.cs",
-              "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Core\\Listener.cs",
-              "RelativeDocumentMoniker": "Core\\Listener.cs",
-              "ToolTip": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Core\\Listener.cs",
-              "RelativeToolTip": "Core\\Listener.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAA9wAcAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T03:43:10.458Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
               "Title": "PacketQueue.cs",
               "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\UnityNet\\Unity\\Network\\PacketQueue.cs",
               "RelativeDocumentMoniker": "UnityNet\\Unity\\Network\\PacketQueue.cs",
@@ -381,46 +173,276 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "NetBehavior.cs",
-              "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\UnityNet\\Unity\\Network\\Component\\NetBehavior.cs",
-              "RelativeDocumentMoniker": "UnityNet\\Unity\\Network\\Component\\NetBehavior.cs",
-              "ToolTip": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\UnityNet\\Unity\\Network\\Component\\NetBehavior.cs",
-              "RelativeToolTip": "UnityNet\\Unity\\Network\\Component\\NetBehavior.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAA6wCIAAAAkAAAA",
+              "DocumentIndex": 6,
+              "Title": "ServerPacketManager.cs",
+              "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Server\\ServerPacketManager.cs",
+              "RelativeDocumentMoniker": "Server\\ServerPacketManager.cs",
+              "ToolTip": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Server\\ServerPacketManager.cs",
+              "RelativeToolTip": "Server\\ServerPacketManager.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAowBkAAABYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T23:49:15.513Z",
+              "WhenOpened": "2024-04-13T11:28:45.76Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 5,
+              "Title": "NetworkManager.cs",
+              "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\UnityNet\\Unity\\Network\\Component\\NetworkManager.cs",
+              "RelativeDocumentMoniker": "UnityNet\\Unity\\Network\\Component\\NetworkManager.cs",
+              "ToolTip": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\UnityNet\\Unity\\Network\\Component\\NetworkManager.cs",
+              "RelativeToolTip": "UnityNet\\Unity\\Network\\Component\\NetworkManager.cs",
+              "ViewState": "AQIAAGwAAAAAAAAAAIAwwHcAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T09:53:58.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UnityPacketManager.cs",
+              "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\UnityNet\\Unity\\Network\\UnityPacketManager.cs",
+              "RelativeDocumentMoniker": "UnityNet\\Unity\\Network\\UnityPacketManager.cs",
+              "ToolTip": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\UnityNet\\Unity\\Network\\UnityPacketManager.cs",
+              "RelativeToolTip": "UnityNet\\Unity\\Network\\UnityPacketManager.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAADgv1IAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T09:58:55.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NetTransform.cs",
+              "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\UnityNet\\Unity\\Network\\Component\\NetTransform.cs",
+              "RelativeDocumentMoniker": "UnityNet\\Unity\\Network\\Component\\NetTransform.cs",
+              "ToolTip": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\UnityNet\\Unity\\Network\\Component\\NetTransform.cs",
+              "RelativeToolTip": "UnityNet\\Unity\\Network\\Component\\NetTransform.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAuwDoAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T00:20:05.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Packet.cs",
+              "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Core\\Packet.cs",
+              "RelativeDocumentMoniker": "Core\\Packet.cs",
+              "ToolTip": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Core\\Packet.cs",
+              "RelativeToolTip": "Core\\Packet.cs",
+              "ViewState": "AQIAACwBAAAAAAAAAAAswGABAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T15:16:56.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LocalNetworkEvent.cs",
+              "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\UnityNet\\Unity\\Network\\Event\\LocalNetworkEvent.cs",
+              "RelativeDocumentMoniker": "UnityNet\\Unity\\Network\\Event\\LocalNetworkEvent.cs",
+              "ToolTip": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\UnityNet\\Unity\\Network\\Event\\LocalNetworkEvent.cs",
+              "RelativeToolTip": "UnityNet\\Unity\\Network\\Event\\LocalNetworkEvent.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T03:13:27.536Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Server\\Program.cs",
+              "RelativeDocumentMoniker": "Server\\Program.cs",
+              "ToolTip": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Server\\Program.cs",
+              "RelativeToolTip": "Server\\Program.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAwwBIAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T11:23:37.712Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SessionManager.cs",
+              "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Server\\SessionManager.cs",
+              "RelativeDocumentMoniker": "Server\\SessionManager.cs",
+              "ToolTip": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Server\\SessionManager.cs",
+              "RelativeToolTip": "Server\\SessionManager.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAIwBcAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T11:27:15.51Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ClientSession.cs",
+              "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Server\\ClientSession.cs",
+              "RelativeDocumentMoniker": "Server\\ClientSession.cs",
+              "ToolTip": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Server\\ClientSession.cs",
+              "RelativeToolTip": "Server\\ClientSession.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAswAoAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T11:24:22.645Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "GameRoom.cs",
+              "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Server\\GameRoom.cs",
+              "RelativeDocumentMoniker": "Server\\GameRoom.cs",
+              "ToolTip": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Server\\GameRoom.cs",
+              "RelativeToolTip": "Server\\GameRoom.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAqwBkAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T11:25:22.966Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "NetObjectData.cs",
+              "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Core\\Structs\\NetObjectData.cs",
+              "RelativeDocumentMoniker": "Core\\Structs\\NetObjectData.cs",
+              "ToolTip": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Core\\Structs\\NetObjectData.cs",
+              "RelativeToolTip": "Core\\Structs\\NetObjectData.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAIwCQAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T01:41:42.865Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "Session.cs",
               "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Core\\Session.cs",
               "RelativeDocumentMoniker": "Core\\Session.cs",
               "ToolTip": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Core\\Session.cs",
               "RelativeToolTip": "Core\\Session.cs",
-              "ViewState": "AQIAAFkAAAAAAAAAAIAwwGMAAAAUAAAA",
+              "ViewState": "AQIAAJcAAAAAAAAAAAAWwGMAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T03:50:20.583Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-12T03:50:20.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DebugClient.csproj",
+              "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\DebugClient\\DebugClient.csproj",
+              "RelativeDocumentMoniker": "DebugClient\\DebugClient.csproj",
+              "ToolTip": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\DebugClient\\DebugClient.csproj",
+              "RelativeToolTip": "DebugClient\\DebugClient.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-04-13T14:29:12.058Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "BufferSaver.cs",
+              "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Core\\Structs\\BufferSaver.cs",
+              "RelativeDocumentMoniker": "Core\\Structs\\BufferSaver.cs",
+              "ToolTip": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Core\\Structs\\BufferSaver.cs",
+              "RelativeToolTip": "Core\\Structs\\BufferSaver.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAowAkAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T02:32:31.958Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Serializer.cs",
+              "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Core\\Serializer.cs",
+              "RelativeDocumentMoniker": "Core\\Serializer.cs",
+              "ToolTip": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Core\\Serializer.cs",
+              "RelativeToolTip": "Core\\Serializer.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAIAwwDoAAABrAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T10:07:25.243Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "SendBuffer.cs",
+              "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Core\\SendBuffer.cs",
+              "RelativeDocumentMoniker": "Core\\SendBuffer.cs",
+              "ToolTip": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Core\\SendBuffer.cs",
+              "RelativeToolTip": "Core\\SendBuffer.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAcwAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T03:46:30.4Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "RecvBuffer.cs",
+              "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Core\\RecvBuffer.cs",
+              "RelativeDocumentMoniker": "Core\\RecvBuffer.cs",
+              "ToolTip": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Core\\RecvBuffer.cs",
+              "RelativeToolTip": "Core\\RecvBuffer.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAawBkAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T03:44:46.373Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UnitySession.cs",
+              "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\UnityNet\\Unity\\Network\\UnitySession.cs",
+              "RelativeDocumentMoniker": "UnityNet\\Unity\\Network\\UnitySession.cs",
+              "ToolTip": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\UnityNet\\Unity\\Network\\UnitySession.cs",
+              "RelativeToolTip": "UnityNet\\Unity\\Network\\UnitySession.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAgwCwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T12:07:27.525Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 20,
-              "Title": "NetObject.cs",
-              "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\UnityNet\\Unity\\Network\\Component\\NetObject.cs",
-              "RelativeDocumentMoniker": "UnityNet\\Unity\\Network\\Component\\NetObject.cs",
-              "ToolTip": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\UnityNet\\Unity\\Network\\Component\\NetObject.cs",
-              "RelativeToolTip": "UnityNet\\Unity\\Network\\Component\\NetObject.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAiwBAAAAAAAAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\DebugClient\\Program.cs",
+              "RelativeDocumentMoniker": "DebugClient\\Program.cs",
+              "ToolTip": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\DebugClient\\Program.cs",
+              "RelativeToolTip": "DebugClient\\Program.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAowDcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T09:53:31.461Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-13T11:23:57.737Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 22,
+              "Title": "INetSerializeable.cs",
+              "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Core\\INetSerializeable.cs",
+              "RelativeDocumentMoniker": "Core\\INetSerializeable.cs",
+              "ToolTip": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Core\\INetSerializeable.cs",
+              "RelativeToolTip": "Core\\INetSerializeable.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAswAwAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T04:51:34.678Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "PacketManager.cs",
+              "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Core\\PacketManager.cs",
+              "RelativeDocumentMoniker": "Core\\PacketManager.cs",
+              "ToolTip": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Core\\PacketManager.cs",
+              "RelativeToolTip": "Core\\PacketManager.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAIAwwCoAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-13T09:56:34.041Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Listener.cs",
+              "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Core\\Listener.cs",
+              "RelativeDocumentMoniker": "Core\\Listener.cs",
+              "ToolTip": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Core\\Listener.cs",
+              "RelativeToolTip": "Core\\Listener.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAA9wAcAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T03:43:10.458Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
               "Title": "NetworkPrefabs.cs",
               "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\UnityNet\\Unity\\SO\\NetworkPrefabs.cs",
               "RelativeDocumentMoniker": "UnityNet\\Unity\\SO\\NetworkPrefabs.cs",
@@ -428,24 +450,11 @@
               "RelativeToolTip": "UnityNet\\Unity\\SO\\NetworkPrefabs.cs",
               "ViewState": "AQIAAAEAAAAAAAAAAAAawAsAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T09:54:04.603Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-13T09:54:04.603Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 26,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Server\\Program.cs",
-              "RelativeDocumentMoniker": "Server\\Program.cs",
-              "ToolTip": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Server\\Program.cs",
-              "RelativeToolTip": "Server\\Program.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAwBIAAAA/AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T11:23:37.712Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
               "Title": "PacketHandler.cs",
               "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Core\\PacketHandler.cs",
               "RelativeDocumentMoniker": "Core\\PacketHandler.cs",
@@ -457,7 +466,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 27,
               "Title": "Connector.cs",
               "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\Core\\Connector.cs",
               "RelativeDocumentMoniker": "Core\\Connector.cs",
@@ -466,18 +475,6 @@
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAB0AAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-12T03:40:50.211Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "DebugClient.csproj",
-              "DocumentMoniker": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\DebugClient\\DebugClient.csproj",
-              "RelativeDocumentMoniker": "DebugClient\\DebugClient.csproj",
-              "ToolTip": "D:\\UnityPJ\\Power_-Yutnori_Server\\Project\\Core\\DebugClient\\DebugClient.csproj",
-              "RelativeToolTip": "DebugClient\\DebugClient.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-04-13T14:29:12.058Z"
             }
           ]
         }
