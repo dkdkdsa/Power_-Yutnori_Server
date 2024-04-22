@@ -7,6 +7,7 @@ namespace Server
     {
         static Listener _listener = new Listener();
         public static GameRoom Room = new GameRoom();
+        public static int Turn = 0;
 
         private const int m_port = 7777;
         static void Main(string[] args)

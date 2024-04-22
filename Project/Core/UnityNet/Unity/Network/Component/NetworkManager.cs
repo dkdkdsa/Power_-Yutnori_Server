@@ -22,7 +22,11 @@ namespace UnityNet
 
         public int ClientId { get; private set; }
         public bool IsConnected { get; private set; }
+        public int CurrentTurn { get; private set; }
         public static NetworkManager Instance { get; private set; }
+
+        public event Action<int> OnTurnChangeEvent;
+        public event Action OnNetworkConnected;
 
         private void Awake()
         {
@@ -56,6 +60,15 @@ namespace UnityNet
             connector.Connect(endPoint, () => { return session; });
 
             IsConnected = true;
+
+        }
+
+        public void TurnChanged(int currentTurn)
+        {
+
+            Debug.Log(currentTurn);
+            OnTurnChangeEvent(currentTurn);
+            CurrentTurn = currentTurn;
 
         }
 
@@ -109,8 +122,8 @@ namespace UnityNet
         public void SetClientId(int clientId)
         {
 
-            Debug.Log(clientId);
             ClientId = clientId;
+            OnNetworkConnected?.Invoke();
 
         }
 

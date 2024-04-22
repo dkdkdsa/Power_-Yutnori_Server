@@ -23,6 +23,7 @@ namespace UnityNet
             makeFunc.Add((ushort)PacketType.MethodLinkParamPacket, MakePacket<MethodLinkPacketParam>);
             makeFunc.Add((ushort)PacketType.TransformLinkPacket, MakePacket<TransformLinkPacket>);
             makeFunc.Add((ushort)PacketType.DespawnObjectPacket, MakePacket<DespawnObjectPacket>);
+            makeFunc.Add((ushort)PacketType.TurnChangeBroadCastPacket, MakePacket<TurnChangeBroadCastPacket>);
 
             handler.Add((ushort)PacketType.NetPrefabSpawneing, NetPrefabHandle);
             handler.Add((ushort)PacketType.GameEnterPacket, GameEnterHandle);
@@ -30,6 +31,16 @@ namespace UnityNet
             handler.Add((ushort)PacketType.MethodLinkParamPacket, LinkMethodParamHandle);
             handler.Add((ushort)PacketType.TransformLinkPacket, LinkTransformHandle);
             handler.Add((ushort)PacketType.DespawnObjectPacket, DestroyHandle);
+            handler.Add((ushort)PacketType.TurnChangeBroadCastPacket, TurnChangeHandle);
+
+        }
+
+        private void TurnChangeHandle(PacketSession session, IPacket packet)
+        {
+
+            var p = packet as TurnChangeBroadCastPacket;
+
+            NetworkManager.Instance.TurnChanged(p.turn);
 
         }
 

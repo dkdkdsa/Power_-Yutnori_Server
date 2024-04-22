@@ -21,7 +21,9 @@ namespace Core
         MethodLinkPacket,
         MethodLinkParamPacket,
         TransformLinkPacket,
-        DespawnObjectPacket
+        DespawnObjectPacket,
+        TurnChangePacket,
+        TurnChangeBroadCastPacket
 
     }
 
@@ -384,6 +386,68 @@ namespace Core
 
             Protocol.Serialize(ref segment, ref count);
             objectHash.Serialize(ref segment, ref count);
+
+            count.Serialize(ref segment);
+
+            return SendBufferHelper.Close(count);
+
+        }
+
+    }
+
+    public class TurnChangePacket : IPacket
+    {
+
+        public ushort Protocol => (ushort)PacketType.TurnChangePacket;
+
+        public void Read(ArraySegment<byte> segment)
+        {
+
+            ushort count = sizeof(ushort);
+            count += sizeof(ushort);
+
+        }
+
+        public ArraySegment<byte> Write()
+        {
+
+            ArraySegment<byte> segment = SendBufferHelper.Open(4096);
+            ushort count = sizeof(ushort);
+
+            Protocol.Serialize(ref segment, ref count);
+            count.Serialize(ref segment);
+
+            return SendBufferHelper.Close(count);
+
+        }
+
+    }
+
+    public class TurnChangeBroadCastPacket : IPacket
+    {
+
+        public int turn;
+
+        public ushort Protocol => (ushort)PacketType.TurnChangeBroadCastPacket;
+
+        public void Read(ArraySegment<byte> segment)
+        {
+
+            ushort count = sizeof(ushort);
+            count += sizeof(ushort);
+
+            Serializer.Deserialize(ref turn, ref segment, ref count);
+
+        }
+
+        public ArraySegment<byte> Write()
+        {
+
+            ArraySegment<byte> segment = SendBufferHelper.Open(4096);
+            ushort count = sizeof(ushort);
+
+            Protocol.Serialize(ref segment, ref count);
+            turn.Serialize(ref segment, ref count);
 
             count.Serialize(ref segment);
 

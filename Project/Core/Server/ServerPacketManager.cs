@@ -20,12 +20,14 @@ namespace Server
             makeFunc.Add((ushort)PacketType.MethodLinkParamPacket, MakePacket<MethodLinkPacketParam>);
             makeFunc.Add((ushort)PacketType.TransformLinkPacket, MakePacket<TransformLinkPacket>);
             makeFunc.Add((ushort)PacketType.DespawnObjectPacket, MakePacket<DespawnObjectPacket>);
+            makeFunc.Add((ushort)PacketType.TurnChangePacket, MakePacket<TurnChangePacket>);
 
             handler.Add((ushort)PacketType.NetPrefabSpawneing, PrefabSpawnHandle);
             handler.Add((ushort)PacketType.MethodLinkPacket, MethodLinkHandle);
             handler.Add((ushort)PacketType.MethodLinkParamPacket, MethodLinkParamHandle);
             handler.Add((ushort)PacketType.TransformLinkPacket, BroadCastNotSendClient);
             handler.Add((ushort)PacketType.DespawnObjectPacket, DespawnObjectHandle);
+            handler.Add((ushort)PacketType.TurnChangePacket, TurnChangePacket);
 
         }
 
@@ -89,6 +91,18 @@ namespace Server
         {
 
             Program.Room.BroadCast(packet.Write(), (session as ClientSession).SessionId);
+
+        }
+
+        public static void TurnChangePacket(PacketSession session, IPacket packet)
+        {
+
+            Program.Turn = Program.Turn == 0 ? 1 : 0;
+
+            var pa = new TurnChangeBroadCastPacket();
+            pa.turn = Program.Turn;
+
+            Program.Room.BroadCast(pa.Write());
 
         }
 
