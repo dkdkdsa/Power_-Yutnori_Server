@@ -25,14 +25,15 @@ namespace UnityNet
         public void LinkMethod(Action method, bool immediatelyCall = false)
         {
 
-            NetworkManager.Instance.LinkMethod(method, NetObject.Hash, immediatelyCall);
+            Debug.Log(GetType().Name);
+            NetworkManager.Instance.LinkMethod(method, NetObject.Hash, GetType().Name, immediatelyCall);
 
         }
 
         public void LinkMethod<T>(Action<T> method, T param, bool immediatelyCall = false) where T : INetSerializeable
         {
 
-            NetworkManager.Instance.LinkMethod<T>(method, NetObject.Hash, param, immediatelyCall);
+            NetworkManager.Instance.LinkMethod<T>(method, NetObject.Hash, param, GetType().Name, immediatelyCall);
 
         }
 

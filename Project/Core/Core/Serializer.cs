@@ -151,7 +151,7 @@ namespace Core
             ushort lenght = 0;
             Deserialize(ref lenght, ref buffer, ref count);
 
-            value = Encoding.UTF8.GetString(buffer.Array, count, lenght);
+            value = Encoding.UTF8.GetString(buffer.Array, buffer.Offset + count, lenght);
             count += lenght;
 
         }

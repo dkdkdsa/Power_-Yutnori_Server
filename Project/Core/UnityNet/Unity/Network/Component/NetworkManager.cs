@@ -134,7 +134,7 @@ namespace UnityNet
 
         }
 
-        public void LinkMethod(Action method, int senderHash, bool immediatelyCall = false)
+        public void LinkMethod(Action method, int senderHash, string callCompoName, bool immediatelyCall = false)
         {
 
             var netobj = netObjectContainer[senderHash];
@@ -154,12 +154,12 @@ namespace UnityNet
 
             }
 
-            var packet = new MethodLinkPacket(senderHash, method.Method.Name, method.Target.GetType().Name, immediatelyCall);
+            var packet = new MethodLinkPacket(senderHash, method.Method.Name, callCompoName, immediatelyCall);
             session.Send(packet.Write());
 
         }
 
-        public void LinkMethod<T>(Action<T> method, int senderHash, T param, bool immediatelyCall = false) where T : INetSerializeable
+        public void LinkMethod<T>(Action<T> method, int senderHash, T param, string callCompoName, bool immediatelyCall = false) where T : INetSerializeable
         {
 
             var netobj = netObjectContainer[senderHash];
@@ -179,7 +179,7 @@ namespace UnityNet
 
             }
 
-            var packet = new MethodLinkPacketParam(senderHash, method.Method.Name, method.Target.GetType().Name, param, immediatelyCall);
+            var packet = new MethodLinkPacketParam(senderHash, method.Method.Name, callCompoName, param, immediatelyCall);
             session.Send(packet.Write());
 
         }
@@ -195,7 +195,8 @@ namespace UnityNet
                 if(compo == null)
                 {
 
-                    Debug.LogWarning($"컴포넌트가 누락되었습니다 이름 : {componentName}");
+                    Debug.LogWarning($"컴포넌트가 누락되었습니다 이름 : {componentName}, 해시 : {hash}, 매서드 : {method}");
+                    return;
 
                 }
 
@@ -222,7 +223,7 @@ namespace UnityNet
                 if (compo == null)
                 {
 
-                    Debug.LogWarning($"컴포넌트가 누락되었습니다 이름 : {componentName}");
+                    Debug.LogWarning($"컴포넌트가 누락되었습니다 이름 : {componentName}, 해시 : {hash}, 매서드 : {method}");
 
                 }
 

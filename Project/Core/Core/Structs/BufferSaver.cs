@@ -20,7 +20,7 @@ namespace Core
 
             this.buffer = new byte[128];
             //받은 배열에서 복사
-            Array.Copy(buffer.Array, count, this.buffer, 0, 128);
+            Array.Copy(buffer.Array, buffer.Offset + count, this.buffer, 0, 128);
             count += 128;
 
         }
